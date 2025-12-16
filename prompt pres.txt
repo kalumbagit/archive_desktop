@@ -1,0 +1,37 @@
+tu ne m'as pas fournie les contenues pour les fichiers suivants que tu m'a fournie : 
+
+"""
+archive_manager/
+
+├── config/
+│   └── database.py                  # Configuration base de données
+│
+├── database/
+│   └── migrations.py                # Scripts de migration
+│
+├── views/
+│   ├── main_window.py               # Fenêtre principale
+│   └── preview_window.py            # Fenêtre de prévisualisation
+│
+├── controllers/
+│   └── search_controller.py         # Contrôleur de recherche
+│
+├── utils/
+│   ├── __init__.py
+│   ├── file_handler.py              # Gestion des fichiers
+│   ├── scanner.py                   # Scanner de dossiers
+│   ├── preview_generator.py         # Générateur de prévisualisations
+│   └── validators.py                # Validateurs
+│
+├── resources/
+│   ├── icons/                       # Icônes de l'application
+│   ├── styles/                      # Feuilles de style Qt
+│   │   ├── light_theme.qss
+│   │   └── dark_theme.qss
+│   └── images/                      # Images
+│
+└── tests/
+    ├── __init__.py
+    ├── test_models.py
+    ├── test_controllers.py
+    └── test_utils.py
