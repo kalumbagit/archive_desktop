@@ -1,6 +1,26 @@
+# requirements.txt
+
+```txt
+# Interface graphique
 PySide6>=6.6.0
+
+# Base de données
 SQLAlchemy>=2.0.0
-Pillow>=10.0.0
-pypdf2>=3.0.0
-python-magic>=0.4.27
+
+# Cryptographie et sécurité
+Werkzeug>=3.0.0
 cryptography>=41.0.0
+
+# Traitement d'images
+Pillow>=10.0.0
+
+# Traitement de PDF
+PyPDF2>=3.0.0
+
+# Détection de type MIME
+python-magic>=0.4.27
+python-magic-bin>=0.4.14; platform_system == "Windows"
+
+# Base de données (optionnel - si vous utilisez PostgreSQL ou MySQL)
+psycopg2-binary>=2.9.9  # Pour PostgreSQL
+PyMySQL>=1.1.0  # Pour MySQL
