@@ -2062,7 +2062,7 @@
         "kind": 6,
         "importPath": "database.db_manager",
         "description": "database.db_manager",
-        "peekOfCode": "class DatabaseManager:\n    _instance = None\n    _engine = None\n    _session_factory = None\n    def _new_(cls):\n        if cls._instance is None:\n            cls.instance = super().new_(cls)\n        return cls._instance\n    def initialize(self, db_type='sqlite', db_path=None, **kwargs):\n        \"\"\"",
+        "peekOfCode": "class DatabaseManager:\n    _instance = None\n    _engine = None\n    _session_factory = None\n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super().__new__(cls)\n        return cls._instance\n    def initialize(self, db_type='sqlite', db_path=None, **kwargs):\n        \"\"\"",
         "detail": "database.db_manager",
         "documentation": {}
     },
@@ -2071,7 +2071,7 @@
         "kind": 5,
         "importPath": "database.db_manager",
         "description": "database.db_manager",
-        "peekOfCode": "Base = declarative_base()\nclass DatabaseManager:\n    _instance = None\n    _engine = None\n    _session_factory = None\n    def _new_(cls):\n        if cls._instance is None:\n            cls.instance = super().new_(cls)\n        return cls._instance\n    def initialize(self, db_type='sqlite', db_path=None, **kwargs):",
+        "peekOfCode": "Base = declarative_base()\nclass DatabaseManager:\n    _instance = None\n    _engine = None\n    _session_factory = None\n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super().__new__(cls)\n        return cls._instance\n    def initialize(self, db_type='sqlite', db_path=None, **kwargs):",
         "detail": "database.db_manager",
         "documentation": {}
     },

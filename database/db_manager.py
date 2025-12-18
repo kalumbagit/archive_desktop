@@ -2,7 +2,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.pool import StaticPool
-import os
 from pathlib import Path
 
 Base = declarative_base()
@@ -12,9 +11,9 @@ class DatabaseManager:
     _engine = None
     _session_factory = None
     
-    def _new_(cls):
+    def __new__(cls):
         if cls._instance is None:
-            cls.instance = super().new_(cls)
+            cls._instance = super().__new__(cls)
         return cls._instance
     
     def initialize(self, db_type='sqlite', db_path=None, **kwargs):
@@ -23,14 +22,17 @@ class DatabaseManager:
         
         Args:
             db_type: 'sqlite', 'postgresql', 'mysql'
-            db_path: Path to SQLite database file
+            db_path: Path to SQLite database file (string or Path)
             **kwargs: Additional database connection parameters
         """
         if db_type == 'sqlite':
             if db_path is None:
                 db_path = Path.home() / '.archive_manager' / 'archives.db'
+            else:
+                # Toujours convertir en Path pour éviter l'erreur .parent
+                db_path = Path(db_path)
             
-            # Create directory if it doesn't exist
+            # Créer le dossier si nécessaire
             db_path.parent.mkdir(parents=True, exist_ok=True)
             
             connection_string = f'sqlite:///{db_path}'
@@ -60,10 +62,13 @@ class DatabaseManager:
             connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{database}'
             self._engine = create_engine(connection_string)
         
-        # Create session factory
+        else:
+            raise ValueError(f"Unsupported database type: {db_type}")
+        
+        # Créer la session factory
         self._session_factory = sessionmaker(bind=self._engine)
         
-        # Create all tables
+        # Créer toutes les tables définies dans Base
         Base.metadata.create_all(self._engine)
     
     def get_session(self):
@@ -76,5 +81,3 @@ class DatabaseManager:
         """Close database connection"""
         if self._engine:
             self._engine.dispose()
-
-
