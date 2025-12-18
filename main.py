@@ -1,4 +1,9 @@
-# main.py
+# =============================================================================
+# FICHIER 1: main.py - CORRIGÉ
+# =============================================================================
+"""
+main.py - Point d'entrée de l'application
+"""
 import sys
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import Qt
@@ -41,3 +46,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

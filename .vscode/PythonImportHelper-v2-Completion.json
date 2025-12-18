@@ -1,0 +1,2119 @@
+[
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "or_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "and_",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "inspect",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "BigInteger",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "StaticPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
+        "label": "NullPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
+        "label": "StaticPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLog",
+        "importPath": "models.audit_log",
+        "description": "models.audit_log",
+        "isExtraImport": true,
+        "detail": "models.audit_log",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLog",
+        "importPath": "models.audit_log",
+        "description": "models.audit_log",
+        "isExtraImport": true,
+        "detail": "models.audit_log",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "models.file",
+        "description": "models.file",
+        "isExtraImport": true,
+        "detail": "models.file",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "models.file",
+        "description": "models.file",
+        "isExtraImport": true,
+        "detail": "models.file",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "models.file",
+        "description": "models.file",
+        "isExtraImport": true,
+        "detail": "models.file",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "magic",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "magic",
+        "description": "magic",
+        "detail": "magic",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "generate_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "check_password_hash",
+        "importPath": "werkzeug.security",
+        "description": "werkzeug.security",
+        "isExtraImport": true,
+        "detail": "werkzeug.security",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSpinBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTextEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFormLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFileDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QProgressBar",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QCheckBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QToolBar",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMenu",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFileDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSplitter",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHeaderView",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSpinBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QCheckBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTabWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFileDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QGroupBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFormLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "FolderController",
+        "importPath": "controllers.folder_controller",
+        "description": "controllers.folder_controller",
+        "isExtraImport": true,
+        "detail": "controllers.folder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FolderController",
+        "importPath": "controllers.folder_controller",
+        "description": "controllers.folder_controller",
+        "isExtraImport": true,
+        "detail": "controllers.folder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FolderController",
+        "importPath": "controllers.folder_controller",
+        "description": "controllers.folder_controller",
+        "isExtraImport": true,
+        "detail": "controllers.folder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FolderController",
+        "importPath": "controllers.folder_controller",
+        "description": "controllers.folder_controller",
+        "isExtraImport": true,
+        "detail": "controllers.folder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FolderController",
+        "importPath": "controllers.folder_controller",
+        "description": "controllers.folder_controller",
+        "isExtraImport": true,
+        "detail": "controllers.folder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "Validator",
+        "importPath": "utils.validators",
+        "description": "utils.validators",
+        "isExtraImport": true,
+        "detail": "utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "isExtraImport": true,
+        "detail": "controllers.file_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "isExtraImport": true,
+        "detail": "controllers.file_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "isExtraImport": true,
+        "detail": "controllers.file_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuthController",
+        "importPath": "controllers.auth_controller",
+        "description": "controllers.auth_controller",
+        "isExtraImport": true,
+        "detail": "controllers.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuthController",
+        "importPath": "controllers.auth_controller",
+        "description": "controllers.auth_controller",
+        "isExtraImport": true,
+        "detail": "controllers.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "QAction",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "LoginWindow",
+        "importPath": "views.login_window",
+        "description": "views.login_window",
+        "isExtraImport": true,
+        "detail": "views.login_window",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "importPath": "views.main_window",
+        "description": "views.main_window",
+        "isExtraImport": true,
+        "detail": "views.main_window",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseMigration",
+        "importPath": "database.migrations",
+        "description": "database.migrations",
+        "isExtraImport": true,
+        "detail": "database.migrations",
+        "documentation": {}
+    },
+    {
+        "label": "importlib.util",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "importlib.util",
+        "description": "importlib.util",
+        "detail": "importlib.util",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseConfig",
+        "kind": 6,
+        "importPath": "config.database",
+        "description": "config.database",
+        "peekOfCode": "class DatabaseConfig:\n    \"\"\"Database configuration helper\"\"\"\n    @staticmethod\n    def get_sqlite_config(db_path=None):\n        \"\"\"Get SQLite database configuration\"\"\"\n        if db_path is None:\n            db_path = Path.home() / '.archive_manager' / 'archives.db'\n        db_path.parent.mkdir(parents=True, exist_ok=True)\n        return {\n            'url': f'sqlite:///{db_path}',",
+        "detail": "config.database",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "class Settings:\n    _instance = None\n    _config_file = Path.home() / '.archive_manager' / 'config.json'\n    DEFAULT_SETTINGS = {\n        'database': {\n            'type': 'sqlite',\n            'path': str(Path.home() / '.archive_manager' / 'archives.db')\n        },\n        'storage': {\n            'base_path': str(Path.home() / 'Archives')",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "kind": 6,
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "peekOfCode": "class AuditController:\n    def _init_(self, user):\n        self.user = user\n        self.db = DatabaseManager()\n    def log_action(self, action, entity_type, entity_id, details=None):\n        \"\"\"Log an action in audit trail\"\"\"\n        session = self.db.get_session()\n        try:\n            log = AuditLog(\n                user_id=self.user.id,",
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuthController",
+        "kind": 6,
+        "importPath": "controllers.auth_controller",
+        "description": "controllers.auth_controller",
+        "peekOfCode": "class AuthController:\n    def _init_(self):\n        self.db = DatabaseManager()\n    def register(self, username, email, password):\n        \"\"\"Register a new user\"\"\"\n        session = self.db.get_session()\n        try:\n            # Check if user exists\n            existing = session.query(User).filter(\n                (User.username == username) | (User.email == email)",
+        "detail": "controllers.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "kind": 6,
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "peekOfCode": "class FileController:\n    def _init_(self, user):\n        self.user = user\n        self.db = DatabaseManager()\n        self.audit = AuditController(user)\n        self.settings = Settings()\n    def add_file(self, source_path, folder_id):\n        \"\"\"Add file to archive\"\"\"\n        session = self.db.get_session()\n        try:",
+        "detail": "controllers.file_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FolderController",
+        "kind": 6,
+        "importPath": "controllers.folder_controller",
+        "description": "controllers.folder_controller",
+        "peekOfCode": "class FolderController:\n    def _init_(self, user):\n        self.user = user\n        self.db = DatabaseManager()\n        self.audit = AuditController(user)\n    def create_folder(self, name, year=None, theme=None, sector=None, \n                     description=None, parent_id=None):\n        \"\"\"Create a new folder\"\"\"\n        session = self.db.get_session()\n        try:",
+        "detail": "controllers.folder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "SearchController",
+        "kind": 6,
+        "importPath": "controllers.search_controller",
+        "description": "controllers.search_controller",
+        "peekOfCode": "class SearchController:\n    \"\"\"Contrôleur pour les opérations de recherche avancée\"\"\"\n    def __init__(self, user):\n        \"\"\"\n        Initialiser le contrôleur de recherche\n        Args:\n            user: L'utilisateur courant (objet User)\n        \"\"\"\n        self.user = user\n        self.db = DatabaseManager()",
+        "detail": "controllers.search_controller",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "kind": 6,
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "peekOfCode": "class DatabaseManager:\n    _instance = None\n    _engine = None\n    _session_factory = None\n    def _new_(cls):\n        if cls._instance is None:\n            cls.instance = super().new_(cls)\n        return cls._instance\n    def initialize(self, db_type='sqlite', db_path=None, **kwargs):\n        \"\"\"",
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "peekOfCode": "Base = declarative_base()\nclass DatabaseManager:\n    _instance = None\n    _engine = None\n    _session_factory = None\n    def _new_(cls):\n        if cls._instance is None:\n            cls.instance = super().new_(cls)\n        return cls._instance\n    def initialize(self, db_type='sqlite', db_path=None, **kwargs):",
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseMigration",
+        "kind": 6,
+        "importPath": "database.migrations",
+        "description": "database.migrations",
+        "peekOfCode": "class DatabaseMigration:\n    \"\"\"Handle database migrations and schema updates\"\"\"\n    def __init__(self):\n        self.db = DatabaseManager()\n    def create_all_tables(self):\n        \"\"\"Create all tables if they don't exist\"\"\"\n        try:\n            Base.metadata.create_all(self.db._engine)\n            print(\"✓ Tables créées avec succès\")\n            return True",
+        "detail": "database.migrations",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLog",
+        "kind": 6,
+        "importPath": "models.audit_log",
+        "description": "models.audit_log",
+        "peekOfCode": "class AuditLog(Base):\n    __tablename__ = 'audit_logs'\n    id = Column(Integer, primary_key=True)\n    user_id = Column(Integer, ForeignKey('users.id'), nullable=False)\n    action = Column(String(50), nullable=False)  # CREATE, UPDATE, DELETE, DOWNLOAD, VIEW\n    entity_type = Column(String(50), nullable=False)  # USER, FOLDER, FILE\n    entity_id = Column(Integer, nullable=False)\n    details = Column(Text)\n    ip_address = Column(String(45))\n    timestamp = Column(DateTime, default=datetime.utcnow)",
+        "detail": "models.audit_log",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "kind": 6,
+        "importPath": "models.file",
+        "description": "models.file",
+        "peekOfCode": "class File(Base):\n    __tablename__ = 'files'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    file_path = Column(String(500), nullable=False)\n    file_type = Column(String(50))\n    file_size = Column(BigInteger)\n    mime_type = Column(String(100))\n    folder_id = Column(Integer, ForeignKey('folders.id'), nullable=False)\n    uploaded_by = Column(Integer, ForeignKey('users.id'), nullable=False)",
+        "detail": "models.file",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "kind": 6,
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "peekOfCode": "class Folder(Base):\n    __tablename__ = 'folders'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    year = Column(Integer, nullable=True)\n    theme = Column(String(100), nullable=True)\n    sector = Column(String(100), nullable=True)\n    description = Column(String(500))\n    parent_id = Column(Integer, ForeignKey('folders.id'), nullable=True)\n    owner_id = Column(Integer, ForeignKey('users.id'), nullable=False)",
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models.user",
+        "description": "models.user",
+        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True)\n    username = Column(String(50), unique=True, nullable=False)\n    email = Column(String(100), unique=True, nullable=False)\n    password_hash = Column(String(255), nullable=False)\n    role = Column(String(20), default='user')  # user, admin\n    created_at = Column(DateTime, default=datetime.utcnow)\n    last_login = Column(DateTime)\n    is_active = Column(Boolean, default=True)",
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "FileHandler",
+        "kind": 6,
+        "importPath": "utils.file_handler",
+        "description": "utils.file_handler",
+        "peekOfCode": "class FileHandler:\n    \"\"\"Handle file operations\"\"\"\n    @staticmethod\n    def copy_file(source: str, destination: str) -> Tuple[bool, str]:\n        \"\"\"\n        Copy file from source to destination\n        Returns:\n            Tuple[bool, str]: (Success, Error message or destination path)\n        \"\"\"\n        try:",
+        "detail": "utils.file_handler",
+        "documentation": {}
+    },
+    {
+        "label": "FolderScanner",
+        "kind": 6,
+        "importPath": "utils.scanner",
+        "description": "utils.scanner",
+        "peekOfCode": "class FolderScanner:\n    \"\"\"Scanner for folders and files\"\"\"\n    def __init__(self, \n                 extensions_filter: Optional[List[str]] = None,\n                 exclude_hidden: bool = True):\n        \"\"\"\n        Initialize scanner\n        Args:\n            extensions_filter: List of extensions to include (e.g., ['.pdf', '.docx'])\n            exclude_hidden: Exclude hidden files and folders",
+        "detail": "utils.scanner",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeManager",
+        "kind": 6,
+        "importPath": "utils.theme_manager",
+        "description": "utils.theme_manager",
+        "peekOfCode": "class ThemeManager:\n    \"\"\"Manage application themes\"\"\"\n    THEMES = {\n        'light': 'resources/styles/light_theme.qss',\n        'dark': 'resources/styles/dark_theme.qss'\n    }\n    @staticmethod\n    def apply_theme(theme_name='light'):\n        \"\"\"Apply theme to application\"\"\"\n        app = QApplication.instance()",
+        "detail": "utils.theme_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Validator",
+        "kind": 6,
+        "importPath": "utils.validators",
+        "description": "utils.validators",
+        "peekOfCode": "class Validator:\n    \"\"\"Validation utilities\"\"\"\n    @staticmethod\n    def validate_email(email: str) -> Tuple[bool, str]:\n        \"\"\"Validate email format\"\"\"\n        pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'\n        if not email:\n            return False, \"Email est requis\"\n        if not re.match(pattern, email):\n            return False, \"Format d'email invalide\"",
+        "detail": "utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "FolderDialog",
+        "kind": 6,
+        "importPath": "views.folder_dialog",
+        "description": "views.folder_dialog",
+        "peekOfCode": "class FolderDialog(QDialog):\n    \"\"\"Dialog for creating or editing folders\"\"\"\n    def __init__(self, parent, parent_folder=None, folder_to_edit=None):\n        super().__init__(parent)\n        self.user = parent.user\n        self.parent_folder = parent_folder\n        self.folder_to_edit = folder_to_edit\n        self.folder_controller = FolderController(self.user)\n        self.setWindowTitle(\"Nouveau dossier\" if not folder_to_edit else \"Modifier le dossier\")\n        self.init_ui()",
+        "detail": "views.folder_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "FolderSelectionDialog",
+        "kind": 6,
+        "importPath": "views.folder_selection_dialog",
+        "description": "views.folder_selection_dialog",
+        "peekOfCode": "class FolderSelectionDialog(QDialog):\n    \"\"\"Dialog for selecting a folder from archive\"\"\"\n    def __init__(self, parent, user):\n        super().__init__(parent)\n        self.user = user\n        self.folder_controller = FolderController(user)\n        self.selected_folder = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Sélectionner un dossier\")",
+        "detail": "views.folder_selection_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "ImportWindow",
+        "kind": 6,
+        "importPath": "views.import_window",
+        "description": "views.import_window",
+        "peekOfCode": "class ImportWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.user = parent.user\n        self.file_controller = FileController(self.user)\n        self.folder_controller = FolderController(self.user)\n        self.selected_files = []\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Importer des fichiers\")",
+        "detail": "views.import_window",
+        "documentation": {}
+    },
+    {
+        "label": "LoginWindow",
+        "kind": 6,
+        "importPath": "views.login_window",
+        "description": "views.login_window",
+        "peekOfCode": "class LoginWindow(QDialog):\n    def _init_(self):\n        super()._init_()\n        self.auth_controller = AuthController()\n        self.user = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Connexion - Gestionnaire d'Archives\")\n        self.setFixedSize(400, 300)\n        layout = QVBoxLayout()",
+        "detail": "views.login_window",
+        "documentation": {}
+    },
+    {
+        "label": "MainWindow",
+        "kind": 6,
+        "importPath": "views.main_window",
+        "description": "views.main_window",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"Fenêtre principale de l'application\"\"\"\n    def __init__(self, user):\n        super().__init__()\n        self.user = user\n        self.current_folder = None\n        # Controllers\n        self.folder_controller = FolderController(user)\n        self.file_controller = FileController(user)\n        self.audit_controller = AuditController(user)",
+        "detail": "views.main_window",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterWindow",
+        "kind": 6,
+        "importPath": "views.register_window",
+        "description": "views.register_window",
+        "peekOfCode": "class RegisterWindow(QDialog):\n    def _init_(self):\n        super()._init_()\n        self.auth_controller = AuthController()\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Inscription - Gestionnaire d'Archives\")\n        self.setFixedSize(400, 400)\n        layout = QVBoxLayout()\n        layout.setSpacing(15)",
+        "detail": "views.register_window",
+        "documentation": {}
+    },
+    {
+        "label": "SearchWindow",
+        "kind": 6,
+        "importPath": "views.search_window",
+        "description": "views.search_window",
+        "peekOfCode": "class SearchWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.user = parent.user\n        self.folder_controller = FolderController(self.user)\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Recherche avancée\")\n        self.setGeometry(200, 200, 800, 600)\n        layout = QVBoxLayout()",
+        "detail": "views.search_window",
+        "documentation": {}
+    },
+    {
+        "label": "SettingsWindow",
+        "kind": 6,
+        "importPath": "views.settings_window",
+        "description": "views.settings_window",
+        "peekOfCode": "class SettingsWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.settings = Settings()\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Paramètres\")\n        self.setGeometry(200, 200, 600, 500)\n        layout = QVBoxLayout()\n        # Tabs",
+        "detail": "views.settings_window",
+        "documentation": {}
+    },
+    {
+        "label": "print_header",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def print_header(text):\n    \"\"\"Print formatted header\"\"\"\n    print(\"\\n\" + \"=\"*60)\n    print(f\"  {text}\")\n    print(\"=\"*60 + \"\\n\")\ndef print_step(step, text):\n    \"\"\"Print step information\"\"\"\n    print(f\"[{step}] {text}\")\ndef run_command(command, description):\n    \"\"\"Run a shell command\"\"\"",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "print_step",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def print_step(step, text):\n    \"\"\"Print step information\"\"\"\n    print(f\"[{step}] {text}\")\ndef run_command(command, description):\n    \"\"\"Run a shell command\"\"\"\n    print(f\"\\n▶ {description}...\")\n    try:\n        result = subprocess.run(\n            command,\n            shell=True,",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "run_command",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def run_command(command, description):\n    \"\"\"Run a shell command\"\"\"\n    print(f\"\\n▶ {description}...\")\n    try:\n        result = subprocess.run(\n            command,\n            shell=True,\n            check=True,\n            capture_output=True,\n            text=True",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "check_python_version",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def check_python_version():\n    \"\"\"Check if Python version is compatible\"\"\"\n    version = sys.version_info\n    if version.major >= 3 and version.minor >= 8:\n        print(f\"✓ Python {version.major}.{version.minor}.{version.micro} détecté\")\n        return True\n    else:\n        print(f\"✗ Python 3.8+ requis. Version actuelle: {version.major}.{version.minor}\")\n        return False\ndef create_directory_structure():",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "create_directory_structure",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def create_directory_structure():\n    \"\"\"Create project directory structure\"\"\"\n    print_step(\"2/6\", \"Création de la structure des dossiers\")\n    directories = [\n        'config',\n        'database',\n        'models',\n        'controllers',\n        'views',\n        'utils',",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "create_requirements_file",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def create_requirements_file():\n    \"\"\"Create requirements.txt if not exists\"\"\"\n    print_step(\"3/6\", \"Création du fichier requirements.txt\")\n    requirements = \"\"\"# Interface graphique\nPySide6>=6.6.0\n# Base de données\nSQLAlchemy>=2.0.0\n# Cryptographie et sécurité\nWerkzeug>=3.0.0\ncryptography>=41.0.0",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "install_dependencies",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def install_dependencies():\n    \"\"\"Install Python dependencies\"\"\"\n    print_step(\"4/6\", \"Installation des dépendances Python\")\n    # Upgrade pip\n    if not run_command(\n        f\"{sys.executable} -m pip install --upgrade pip\",\n        \"Mise à jour de pip\"\n    ):\n        print(\"⚠ Avertissement: échec de la mise à jour de pip\")\n    # Install requirements",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "setup_database",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def setup_database():\n    \"\"\"Initialize database\"\"\"\n    print_step(\"5/6\", \"Configuration de la base de données\")\n    # Check if setup_database.py exists\n    if not Path('setup_database.py').exists():\n        print(\"⚠ setup_database.py introuvable - ignoré\")\n        return True\n    print(\"\\nVoulez-vous configurer la base de données maintenant?\")\n    response = input(\"(o/n): \").lower()\n    if response == 'o':",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "create_readme",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def create_readme():\n    \"\"\"Create basic README if not exists\"\"\"\n    print_step(\"6/6\", \"Création du README\")\n    readme_content = \"\"\"# Gestionnaire d'Archives Numériques\n## Installation\nL'installation a été effectuée avec succès!\n## Démarrage\n```bash\npython main.py\n```",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def main():\n    \"\"\"Main installation process\"\"\"\n    print_header(\"INSTALLATION DU GESTIONNAIRE D'ARCHIVES\")\n    print(\"Ce script va installer et configurer l'application.\")\n    print(\"Durée estimée: 2-5 minutes\\n\")\n    # Step 1: Check Python version\n    print_step(\"1/6\", \"Vérification de Python\")\n    if not check_python_version():\n        print(\"\\n✗ Installation annulée: version Python incompatible\")\n        sys.exit(1)",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "create_init_files",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def create_init_files():\n    \"\"\"Create __init__.py files for all packages\"\"\"\n    print(\"Création des fichiers __init__.py...\")\n    for package, content in INIT_TEMPLATES.items():\n        init_file = Path(package) / '__init__.py'\n        init_file.parent.mkdir(parents=True, exist_ok=True)\n        init_file.write_text(content)\n        print(f\"✓ {init_file}\")\ndef create_file_structure():\n    \"\"\"Create empty file structure\"\"\"",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "create_file_structure",
+        "kind": 2,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "def create_file_structure():\n    \"\"\"Create empty file structure\"\"\"\n    print(\"\\nCréation de la structure des fichiers...\")\n    files = [\n        'config/settings.py',\n        'config/database.py',\n        'database/db_manager.py',\n        'database/migrations.py',\n        'models/user.py',\n        'models/folder.py',",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "INIT_TEMPLATES",
+        "kind": 5,
+        "importPath": "install",
+        "description": "install",
+        "peekOfCode": "INIT_TEMPLATES = {\n    'config': '\"\"\"Configuration package\"\"\"\\nfrom .settings import Settings\\nfrom .database import DatabaseConfig\\n\\n__all__ = [\\'Settings\\', \\'DatabaseConfig\\']',\n    'database': '\"\"\"Database package\"\"\"\\nfrom .db_manager import DatabaseManager, Base\\nfrom .migrations import DatabaseMigration\\n\\n__all__ = [\\'DatabaseManager\\', \\'Base\\', \\'DatabaseMigration\\']',\n    'models': '\"\"\"Models package\"\"\"\\nfrom .user import User\\nfrom .folder import Folder\\nfrom .file import File\\nfrom .audit_log import AuditLog\\n\\n__all__ = [\\'User\\', \\'Folder\\', \\'File\\', \\'AuditLog\\']',\n    'controllers': '\"\"\"Controllers package\"\"\"\\nfrom .auth_controller import AuthController\\nfrom .folder_controller import FolderController\\nfrom .file_controller import FileController\\nfrom .search_controller import SearchController\\nfrom .audit_controller import AuditController\\n\\n__all__ = [\\'AuthController\\', \\'FolderController\\', \\'FileController\\', \\'SearchController\\', \\'AuditController\\']',\n    'views': '\"\"\"Views package\"\"\"',\n    'utils': '\"\"\"Utilities package\"\"\"',\n    'tests': '\"\"\"Tests package\"\"\"'\n}\ndef create_init_files():",
+        "detail": "install",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    # Create application\n    app = QApplication(sys.argv)\n    app.setApplicationName(\"Gestionnaire d'Archives Numériques\")\n    app.setOrganizationName(\"ArchiveManager\")\n    # Initialize database\n    db = DatabaseManager()\n    settings = Settings()\n    db_config = settings.get('database')\n    db.initialize(",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "setup_database",
+        "kind": 2,
+        "importPath": "setup_database",
+        "description": "setup_database",
+        "peekOfCode": "def setup_database():\n    \"\"\"Initialize and set up database\"\"\"\n    print(\"=== Configuration de la base de données ===\\n\")\n    # Initialize database\n    db = DatabaseManager()\n    settings = Settings()\n    db_config = settings.get('database')\n    db.initialize(\n        db_type=db_config.get('type', 'sqlite'),\n        db_path=db_config.get('path')",
+        "detail": "setup_database",
+        "documentation": {}
+    },
+    {
+        "label": "ProjectVerifier",
+        "kind": 6,
+        "importPath": "verify_project",
+        "description": "verify_project",
+        "peekOfCode": "class ProjectVerifier:\n    \"\"\"Vérificateur de projet\"\"\"\n    def __init__(self):\n        self.errors = []\n        self.warnings = []\n        self.success = []\n    def check_file_exists(self, filepath):\n        \"\"\"Vérifier qu'un fichier existe\"\"\"\n        path = Path(filepath)\n        if path.exists():",
+        "detail": "verify_project",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "verify_project",
+        "description": "verify_project",
+        "peekOfCode": "def main():\n    \"\"\"Point d'entrée principal\"\"\"\n    verifier = ProjectVerifier()\n    success = verifier.run()\n    sys.exit(0 if success else 1)\nif __name__ == \"__main__\":\n    main()",
+        "detail": "verify_project",
+        "documentation": {}
+    }
+]
