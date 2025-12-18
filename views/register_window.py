@@ -143,6 +143,6 @@ class RegisterWindow(QDialog):
         success, message = self.auth_controller.register(username, email, password)
         
         if success:
-            self.accept()
+            self.close() # ferme juste la fenêtre d'inscription
         else:
             QMessageBox.critical(self, "Erreur d'inscription", message)
