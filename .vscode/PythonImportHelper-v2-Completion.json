@@ -336,6 +336,22 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -346,6 +362,22 @@
     },
     {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -975,6 +1007,94 @@
         "documentation": {}
     },
     {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QListWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSplitter",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMenu",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QDialog",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -1240,6 +1360,86 @@
     },
     {
         "label": "QComboBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTextEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QScrollArea",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFileDialog",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -1536,6 +1736,22 @@
         "documentation": {}
     },
     {
+        "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "Qt",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -1553,6 +1769,14 @@
     },
     {
         "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -1640,43 +1864,11 @@
         "documentation": {}
     },
     {
-        "label": "FileController",
-        "importPath": "controllers.file_controller",
-        "description": "controllers.file_controller",
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
         "isExtraImport": true,
-        "detail": "controllers.file_controller",
-        "documentation": {}
-    },
-    {
-        "label": "FileController",
-        "importPath": "controllers.file_controller",
-        "description": "controllers.file_controller",
-        "isExtraImport": true,
-        "detail": "controllers.file_controller",
-        "documentation": {}
-    },
-    {
-        "label": "FileController",
-        "importPath": "controllers.file_controller",
-        "description": "controllers.file_controller",
-        "isExtraImport": true,
-        "detail": "controllers.file_controller",
-        "documentation": {}
-    },
-    {
-        "label": "AuthController",
-        "importPath": "controllers.auth_controller",
-        "description": "controllers.auth_controller",
-        "isExtraImport": true,
-        "detail": "controllers.auth_controller",
-        "documentation": {}
-    },
-    {
-        "label": "AuthController",
-        "importPath": "controllers.auth_controller",
-        "description": "controllers.auth_controller",
-        "isExtraImport": true,
-        "detail": "controllers.auth_controller",
+        "detail": "PySide6.QtGui",
         "documentation": {}
     },
     {
@@ -1688,12 +1880,85 @@
         "documentation": {}
     },
     {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "isExtraImport": true,
+        "detail": "controllers.file_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "isExtraImport": true,
+        "detail": "controllers.file_controller",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "isExtraImport": true,
+        "detail": "controllers.file_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuthController",
+        "importPath": "controllers.auth_controller",
+        "description": "controllers.auth_controller",
+        "isExtraImport": true,
+        "detail": "controllers.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuthController",
+        "importPath": "controllers.auth_controller",
+        "description": "controllers.auth_controller",
+        "isExtraImport": true,
+        "detail": "controllers.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PreviewGenerator",
+        "importPath": "utils.preview_generator",
+        "description": "utils.preview_generator",
+        "isExtraImport": true,
+        "detail": "utils.preview_generator",
+        "documentation": {}
+    },
+    {
         "label": "subprocess",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "subprocess",
         "description": "subprocess",
         "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "platform",
+        "description": "platform",
+        "detail": "platform",
         "documentation": {}
     },
     {
@@ -1865,6 +2130,15 @@
         "documentation": {}
     },
     {
+        "label": "PreviewGenerator",
+        "kind": 6,
+        "importPath": "utils.preview_generator",
+        "description": "utils.preview_generator",
+        "peekOfCode": "class PreviewGenerator:\n    \"\"\"Générateur de prévisualisations pour différents types de fichiers\"\"\"\n    # Types de fichiers supportés\n    SUPPORTED_IMAGE_FORMATS = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp', '.ico']\n    SUPPORTED_TEXT_FORMATS = ['.txt', '.md', '.log', '.csv', '.json', '.xml', '.html', '.css', '.js', '.py', '.java', '.c', '.cpp', '.h']\n    SUPPORTED_DOCUMENT_FORMATS = ['.pdf', '.docx', '.doc', '.odt', '.rtf']\n    @staticmethod\n    def can_preview(file_path: str) -> bool:\n        \"\"\"\n        Vérifier si un fichier peut être prévisualisé",
+        "detail": "utils.preview_generator",
+        "documentation": {}
+    },
+    {
         "label": "FolderScanner",
         "kind": 6,
         "importPath": "utils.scanner",
@@ -1910,6 +2184,15 @@
         "documentation": {}
     },
     {
+        "label": "FolderView",
+        "kind": 6,
+        "importPath": "views.folder_view",
+        "description": "views.folder_view",
+        "peekOfCode": "class FolderView(QWidget):\n    \"\"\"Vue détaillée d'un dossier\"\"\"\n    # Signaux\n    folder_selected = Signal(object)  # Émis quand un sous-dossier est sélectionné\n    file_selected = Signal(object)    # Émis quand un fichier est sélectionné\n    file_double_clicked = Signal(object)  # Émis lors d'un double-clic sur un fichier\n    def __init__(self, folder, file_controller, parent=None):\n        \"\"\"\n        Initialiser la vue du dossier\n        Args:",
+        "detail": "views.folder_view",
+        "documentation": {}
+    },
+    {
         "label": "ImportWindow",
         "kind": 6,
         "importPath": "views.import_window",
@@ -1934,6 +2217,15 @@
         "description": "views.main_window",
         "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"Fenêtre principale de l'application\"\"\"\n    def __init__(self, user):\n        super().__init__()\n        self.user = user\n        self.current_folder = None\n        # Controllers\n        self.folder_controller = FolderController(user)\n        self.file_controller = FileController(user)\n        self.audit_controller = AuditController(user)",
         "detail": "views.main_window",
+        "documentation": {}
+    },
+    {
+        "label": "PreviewWindow",
+        "kind": 6,
+        "importPath": "views.preview_window",
+        "description": "views.preview_window",
+        "peekOfCode": "class PreviewWindow(QDialog):\n    \"\"\"Fenêtre de prévisualisation des fichiers\"\"\"\n    def __init__(self, file_obj, parent=None):\n        \"\"\"\n        Initialiser la fenêtre de prévisualisation\n        Args:\n            file_obj: Objet File à prévisualiser\n            parent: Widget parent\n        \"\"\"\n        super().__init__(parent)",
+        "detail": "views.preview_window",
         "documentation": {}
     },
     {
