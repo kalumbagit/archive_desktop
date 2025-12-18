@@ -1,8 +1,7 @@
-
 # config/settings.py
 import json
 from pathlib import Path
-from typing import  Any
+from typing import Any
 
 class Settings:
     _instance = None
@@ -27,9 +26,9 @@ class Settings:
         }
     }
     
-    def _new_(cls):
+    def __new__(cls):
         if cls._instance is None:
-            cls.instance = super().new_(cls)
+            cls._instance = super().__new__(cls)
             cls._instance._load_settings()
         return cls._instance
     
@@ -69,3 +68,11 @@ class Settings:
             settings = settings[k]
         settings[keys[-1]] = value
         self.save()
+    
+    def __getitem__(self, key: str) -> Any:
+        """Allow dictionary-like access"""
+        return self.get(key)
+    
+    def __setitem__(self, key: str, value: Any):
+        """Allow dictionary-like assignment"""
+        self.set(key, value)
