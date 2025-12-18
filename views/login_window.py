@@ -8,7 +8,8 @@ from database.db_manager import DatabaseManager
 class LoginWindow(QDialog):
     def __init__(self, db: DatabaseManager):
         super().__init__()
-        self.auth_controller = AuthController(db)
+        self.db=db
+        self.auth_controller = AuthController(self.db)
         self.user = None
         self.init_ui()
 
@@ -108,7 +109,7 @@ class LoginWindow(QDialog):
         from views.register_window import RegisterWindow 
         # Fermer la fenêtre de login AVANT d’ouvrir l’inscription 
         self.hide() # ou self.close() 
-        register_window = RegisterWindow(db) 
+        register_window = RegisterWindow(self.db) 
         if register_window.exec(): 
             QMessageBox.information( self, "Succès", "Compte créé avec succès! Vous pouvez maintenant vous connecter." ) 
             # Réafficher la fenêtre de login après inscription 
