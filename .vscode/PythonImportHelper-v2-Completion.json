@@ -545,6 +545,22 @@
         "documentation": {}
     },
     {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
         "label": "AuditLog",
         "importPath": "models.audit_log",
         "description": "models.audit_log",
@@ -2026,7 +2042,7 @@
         "kind": 6,
         "importPath": "controllers.auth_controller",
         "description": "controllers.auth_controller",
-        "peekOfCode": "class AuthController:\n    def _init_(self):\n        self.db = DatabaseManager()\n    def register(self, username, email, password):\n        \"\"\"Register a new user\"\"\"\n        session = self.db.get_session()\n        try:\n            # Check if user exists\n            existing = session.query(User).filter(\n                (User.username == username) | (User.email == email)",
+        "peekOfCode": "class AuthController:\n    def __init__(self, db: DatabaseManager): \n        self.db = db\n    def register(self, username, email, password):\n        \"\"\"Register a new user\"\"\"\n        session = self.db.get_session()\n        try:\n            # Check if user exists\n            existing = session.query(User).filter(\n                (User.username == username) | (User.email == email)",
         "detail": "controllers.auth_controller",
         "documentation": {}
     },
@@ -2206,7 +2222,7 @@
         "kind": 6,
         "importPath": "views.login_window",
         "description": "views.login_window",
-        "peekOfCode": "class LoginWindow(QDialog):\n    def __init__(self):\n        super().__init__()\n        self.auth_controller = AuthController()\n        self.user = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Connexion - Gestionnaire d'Archives\")\n        self.setFixedSize(400, 300)\n        layout = QVBoxLayout()",
+        "peekOfCode": "class LoginWindow(QDialog):\n    def __init__(self, db: DatabaseManager):\n        super().__init__()\n        self.auth_controller = AuthController(db)\n        self.user = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Connexion - Gestionnaire d'Archives\")\n        self.setFixedSize(400, 300)\n        layout = QVBoxLayout()",
         "detail": "views.login_window",
         "documentation": {}
     },
@@ -2233,7 +2249,7 @@
         "kind": 6,
         "importPath": "views.register_window",
         "description": "views.register_window",
-        "peekOfCode": "class RegisterWindow(QDialog):\n    def __init__(self):\n        super().__init__()\n        self.auth_controller = AuthController()\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Inscription - Gestionnaire d'Archives\")\n        self.setFixedSize(450, 500)\n        layout = QVBoxLayout()\n        layout.setSpacing(15)",
+        "peekOfCode": "class RegisterWindow(QDialog):\n    def __init__(self, db: DatabaseManager):\n        super().__init__()\n        self.auth_controller = AuthController(db)\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Inscription - Gestionnaire d'Archives\")\n        self.setFixedSize(450, 500)\n        layout = QVBoxLayout()\n        layout.setSpacing(15)",
         "detail": "views.register_window",
         "documentation": {}
     },

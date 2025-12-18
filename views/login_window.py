@@ -3,13 +3,15 @@ from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel,
                                QLineEdit, QPushButton, QMessageBox, QWidget)
 from PySide6.QtCore import Qt
 from controllers.auth_controller import AuthController
+from database.db_manager import DatabaseManager
 
 class LoginWindow(QDialog):
-    def __init__(self):
+    def __init__(self, db: DatabaseManager):
         super().__init__()
-        self.auth_controller = AuthController()
+        self.auth_controller = AuthController(db)
         self.user = None
         self.init_ui()
+
     
     def init_ui(self):
         self.setWindowTitle("Connexion - Gestionnaire d'Archives")
@@ -106,7 +108,7 @@ class LoginWindow(QDialog):
         from views.register_window import RegisterWindow 
         # Fermer la fenêtre de login AVANT d’ouvrir l’inscription 
         self.hide() # ou self.close() 
-        register_window = RegisterWindow() 
+        register_window = RegisterWindow(db) 
         if register_window.exec(): 
             QMessageBox.information( self, "Succès", "Compte créé avec succès! Vous pouvez maintenant vous connecter." ) 
             # Réafficher la fenêtre de login après inscription 

@@ -5,8 +5,8 @@ from controllers.audit_controller import AuditController
 from datetime import datetime
 
 class AuthController:
-    def _init_(self):
-        self.db = DatabaseManager()
+    def __init__(self, db: DatabaseManager): 
+        self.db = db
     
     def register(self, username, email, password):
         """Register a new user"""

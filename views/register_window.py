@@ -5,11 +5,12 @@ from PySide6.QtWidgets import (QDialog, QVBoxLayout, QLabel, QLineEdit,
 from PySide6.QtCore import Qt
 from controllers.auth_controller import AuthController
 import re
+from database.db_manager import DatabaseManager
 
 class RegisterWindow(QDialog):
-    def __init__(self):
+    def __init__(self, db: DatabaseManager):
         super().__init__()
-        self.auth_controller = AuthController()
+        self.auth_controller = AuthController(db)
         self.init_ui()
     
     def init_ui(self):

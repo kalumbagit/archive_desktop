@@ -29,7 +29,7 @@ def main():
     )
     
     # Show login window
-    login_window = LoginWindow()
+    login_window = LoginWindow(db)
     
     if login_window.exec():
         # User logged in successfully
