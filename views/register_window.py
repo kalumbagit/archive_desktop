@@ -7,14 +7,14 @@ from controllers.auth_controller import AuthController
 import re
 
 class RegisterWindow(QDialog):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
         self.auth_controller = AuthController()
         self.init_ui()
     
     def init_ui(self):
         self.setWindowTitle("Inscription - Gestionnaire d'Archives")
-        self.setFixedSize(400, 400)
+        self.setFixedSize(450, 500)
         
         layout = QVBoxLayout()
         layout.setSpacing(15)

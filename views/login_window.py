@@ -5,8 +5,8 @@ from PySide6.QtCore import Qt
 from controllers.auth_controller import AuthController
 
 class LoginWindow(QDialog):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
         self.auth_controller = AuthController()
         self.user = None
         self.init_ui()
@@ -102,10 +102,15 @@ class LoginWindow(QDialog):
         else:
             QMessageBox.critical(self, "Erreur de connexion", result)
     
-    def open_register(self):
-        from views.register_window import RegisterWindow
-        register_window = RegisterWindow()
-        if register_window.exec():
-            QMessageBox.information(self, "Succès", 
-                                   "Compte créé avec succès! Vous pouvez maintenant vous connecter.")
-
+    def open_register(self): 
+        from views.register_window import RegisterWindow 
+        # Fermer la fenêtre de login AVANT d’ouvrir l’inscription 
+        self.hide() # ou self.close() 
+        register_window = RegisterWindow() 
+        if register_window.exec(): 
+            QMessageBox.information( self, "Succès", "Compte créé avec succès! Vous pouvez maintenant vous connecter." ) 
+            # Réafficher la fenêtre de login après inscription 
+            self.show() 
+        else: 
+            # Si l’utilisateur annule, on réaffiche la fenêtre de login 
+            self.show()
