@@ -585,6 +585,14 @@
         "documentation": {}
     },
     {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
         "label": "AuditLog",
         "importPath": "models.audit_log",
         "description": "models.audit_log",
@@ -2237,7 +2245,7 @@
         "kind": 6,
         "importPath": "views.import_window",
         "description": "views.import_window",
-        "peekOfCode": "class ImportWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.user = parent.user\n        self.file_controller = FileController(self.user)\n        self.folder_controller = FolderController(self.user)\n        self.selected_files = []\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Importer des fichiers\")",
+        "peekOfCode": "class ImportWindow(QDialog):\n    def __init__(self, parent,db: DatabaseManager):\n        super().__init__(parent)\n        self.user = parent.user\n        self.db=db\n        self.file_controller = FileController(self.user,self.db)\n        self.folder_controller = FolderController(self.user,self.db)\n        self.selected_files = []\n        self.init_ui()\n    def init_ui(self):",
         "detail": "views.import_window",
         "documentation": {}
     },

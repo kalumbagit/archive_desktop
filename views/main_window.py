@@ -255,7 +255,7 @@ class MainWindow(QMainWindow):
     def open_import_window(self):
         """Ouvrir la fenêtre d'import"""
         from views.import_window import ImportWindow
-        window = ImportWindow(self)
+        window = ImportWindow(self,self.db)
         if window.exec():
             self.refresh_view()
     

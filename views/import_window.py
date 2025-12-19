@@ -9,13 +9,15 @@ from PySide6.QtCore import Qt
 from controllers.file_controller import FileController
 from controllers.folder_controller import FolderController
 import os
+from database.db_manager import DatabaseManager
 
 class ImportWindow(QDialog):
-    def __init__(self, parent):
+    def __init__(self, parent,db: DatabaseManager):
         super().__init__(parent)
         self.user = parent.user
-        self.file_controller = FileController(self.user)
-        self.folder_controller = FolderController(self.user)
+        self.db=db
+        self.file_controller = FileController(self.user,self.db)
+        self.folder_controller = FolderController(self.user,self.db)
         self.selected_files = []
         self.init_ui()
     
