@@ -45,7 +45,9 @@ class FolderController:
         try:
             folders = (
                 session.query(Folder)
+                .options(selectinload(Folder.subfolders))
                 .filter(
+                    Folder.parent_id.is_(None),
                     Folder.owner_id == self.user.id
                 ).all())
             return folders
