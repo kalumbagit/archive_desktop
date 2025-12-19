@@ -15,7 +15,8 @@ class FolderDialog(QDialog):
         self.user = parent.user
         self.parent_folder = parent_folder
         self.folder_to_edit = folder_to_edit
-        self.folder_controller = FolderController(self.user, db)
+        self.db=db
+        self.folder_controller = FolderController(self.user, self.db)
         
         self.setWindowTitle("Nouveau dossier" if not folder_to_edit else "Modifier le dossier")
         self.init_ui()

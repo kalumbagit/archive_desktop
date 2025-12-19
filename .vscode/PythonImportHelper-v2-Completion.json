@@ -2202,7 +2202,7 @@
         "kind": 6,
         "importPath": "views.folder_dialog",
         "description": "views.folder_dialog",
-        "peekOfCode": "class FolderDialog(QDialog):\n    \"\"\"Dialog for creating or editing folders\"\"\"\n    def __init__(self, parent, db: DatabaseManager, parent_folder=None, folder_to_edit=None):\n        super().__init__(parent)\n        self.user = parent.user\n        self.parent_folder = parent_folder\n        self.folder_to_edit = folder_to_edit\n        self.folder_controller = FolderController(self.user, db)\n        self.setWindowTitle(\"Nouveau dossier\" if not folder_to_edit else \"Modifier le dossier\")\n        self.init_ui()",
+        "peekOfCode": "class FolderDialog(QDialog):\n    \"\"\"Dialog for creating or editing folders\"\"\"\n    def __init__(self, parent, db: DatabaseManager, parent_folder=None, folder_to_edit=None):\n        super().__init__(parent)\n        self.user = parent.user\n        self.parent_folder = parent_folder\n        self.folder_to_edit = folder_to_edit\n        self.db=db\n        self.folder_controller = FolderController(self.user, self.db)\n        self.setWindowTitle(\"Nouveau dossier\" if not folder_to_edit else \"Modifier le dossier\")",
         "detail": "views.folder_dialog",
         "documentation": {}
     },

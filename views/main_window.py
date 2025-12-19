@@ -235,7 +235,7 @@ class MainWindow(QMainWindow):
     def create_new_folder(self):
         """Créer un nouveau dossier"""
         from views.folder_dialog import FolderDialog
-        dialog = FolderDialog(self, self.current_folder, db=self.db)
+        dialog = FolderDialog(self, self.db, parent_folder=self.current_folder)
         if dialog.exec():
             self.load_folders()
     
