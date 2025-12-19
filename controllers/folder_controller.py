@@ -5,11 +5,11 @@ from controllers.audit_controller import AuditController
 from sqlalchemy import or_
 
 class FolderController:
-    def _init_(self, user):
+    def __init__(self, user, db: DatabaseManager):
         self.user = user
-        self.db = DatabaseManager()
-        self.audit = AuditController(user)
-    
+        self.db = db
+        self.audit = AuditController(user, db)
+
     def create_folder(self, name, year=None, theme=None, sector=None, 
                      description=None, parent_id=None):
         """Create a new folder"""

@@ -10,10 +10,10 @@ from pathlib import Path
 import magic
 
 class FileController:
-    def _init_(self, user):
+    def __init__(self, user, db: DatabaseManager):
         self.user = user
-        self.db = DatabaseManager()
-        self.audit = AuditController(user)
+        self.db = db
+        self.audit = AuditController(user, db)
         self.settings = Settings()
     
     def add_file(self, source_path, folder_id):

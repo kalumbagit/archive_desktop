@@ -561,6 +561,14 @@
         "documentation": {}
     },
     {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
         "label": "AuditLog",
         "importPath": "models.audit_log",
         "description": "models.audit_log",
@@ -2033,7 +2041,7 @@
         "kind": 6,
         "importPath": "controllers.audit_controller",
         "description": "controllers.audit_controller",
-        "peekOfCode": "class AuditController:\n    def _init_(self, user):\n        self.user = user\n        self.db = DatabaseManager()\n    def log_action(self, action, entity_type, entity_id, details=None):\n        \"\"\"Log an action in audit trail\"\"\"\n        session = self.db.get_session()\n        try:\n            log = AuditLog(\n                user_id=self.user.id,",
+        "peekOfCode": "class AuditController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n    def log_action(self, action, entity_type, entity_id, details=None):\n        \"\"\"Log an action in audit trail\"\"\"\n        session = self.db.get_session()\n        try:\n            log = AuditLog(\n                user_id=self.user.id,",
         "detail": "controllers.audit_controller",
         "documentation": {}
     },
@@ -2051,7 +2059,7 @@
         "kind": 6,
         "importPath": "controllers.file_controller",
         "description": "controllers.file_controller",
-        "peekOfCode": "class FileController:\n    def _init_(self, user):\n        self.user = user\n        self.db = DatabaseManager()\n        self.audit = AuditController(user)\n        self.settings = Settings()\n    def add_file(self, source_path, folder_id):\n        \"\"\"Add file to archive\"\"\"\n        session = self.db.get_session()\n        try:",
+        "peekOfCode": "class FileController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n        self.audit = AuditController(user, db)\n        self.settings = Settings()\n    def add_file(self, source_path, folder_id):\n        \"\"\"Add file to archive\"\"\"\n        session = self.db.get_session()\n        try:",
         "detail": "controllers.file_controller",
         "documentation": {}
     },
@@ -2060,7 +2068,7 @@
         "kind": 6,
         "importPath": "controllers.folder_controller",
         "description": "controllers.folder_controller",
-        "peekOfCode": "class FolderController:\n    def _init_(self, user):\n        self.user = user\n        self.db = DatabaseManager()\n        self.audit = AuditController(user)\n    def create_folder(self, name, year=None, theme=None, sector=None, \n                     description=None, parent_id=None):\n        \"\"\"Create a new folder\"\"\"\n        session = self.db.get_session()\n        try:",
+        "peekOfCode": "class FolderController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n        self.audit = AuditController(user, db)\n    def create_folder(self, name, year=None, theme=None, sector=None, \n                     description=None, parent_id=None):\n        \"\"\"Create a new folder\"\"\"\n        session = self.db.get_session()\n        try:",
         "detail": "controllers.folder_controller",
         "documentation": {}
     },
@@ -2231,7 +2239,7 @@
         "kind": 6,
         "importPath": "views.main_window",
         "description": "views.main_window",
-        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"Fenêtre principale de l'application\"\"\"\n    def __init__(self, user):\n        super().__init__()\n        self.user = user\n        self.current_folder = None\n        # Controllers\n        self.folder_controller = FolderController(user)\n        self.file_controller = FileController(user)\n        self.audit_controller = AuditController(user)",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"Fenêtre principale de l'application\"\"\"\n    def __init__(self, user, db: DatabaseManager):\n        super().__init__()\n        self.user = user\n        self.db = db\n        self.current_folder = None\n        # Controllers\n        self.folder_controller = FolderController(user,self.db)\n        self.file_controller = FileController(user,self.db)",
         "detail": "views.main_window",
         "documentation": {}
     },

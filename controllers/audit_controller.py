@@ -6,10 +6,10 @@ from models.audit_log import AuditLog
 import json
 
 class AuditController:
-    def _init_(self, user):
+    def __init__(self, user, db: DatabaseManager):
         self.user = user
-        self.db = DatabaseManager()
-    
+        self.db = db
+
     def log_action(self, action, entity_type, entity_id, details=None):
         """Log an action in audit trail"""
         session = self.db.get_session()

@@ -36,7 +36,7 @@ def main():
         user = login_window.user
         
         # Show main window
-        main_window = MainWindow(user)
+        main_window = MainWindow(user,db)
         main_window.show()
         
         sys.exit(app.exec())

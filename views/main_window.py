@@ -13,19 +13,21 @@ from PySide6.QtGui import QAction
 from controllers.folder_controller import FolderController
 from controllers.file_controller import FileController
 from controllers.audit_controller import AuditController
+from database.db_manager import DatabaseManager
 
 class MainWindow(QMainWindow):
     """Fenêtre principale de l'application"""
     
-    def __init__(self, user):
+    def __init__(self, user, db: DatabaseManager):
         super().__init__()
         self.user = user
+        self.db = db
         self.current_folder = None
         
         # Controllers
-        self.folder_controller = FolderController(user)
-        self.file_controller = FileController(user)
-        self.audit_controller = AuditController(user)
+        self.folder_controller = FolderController(user,self.db)
+        self.file_controller = FileController(user,self.db)
+        self.audit_controller = AuditController(user,self.db)
         
         self.init_ui()
         self.load_folders()
