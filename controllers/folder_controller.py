@@ -43,10 +43,11 @@ class FolderController:
         """Get all root folders (no parent)"""
         session = self.db.get_session()
         try:
-            folders = session.query(Folder).options(selectinload(Folder.subfolders)).filter(
-                Folder.parent_id.is_(None),
-                Folder.owner_id == self.user.id
-            ).all()
+            folders = (
+                session.query(Folder)
+                .filter(
+                    Folder.owner_id == self.user.id
+                ).all())
             return folders
         finally:
             session.close()
