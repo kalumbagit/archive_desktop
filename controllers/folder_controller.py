@@ -3,6 +3,7 @@ from database.db_manager import DatabaseManager
 from models.folder import Folder
 from controllers.audit_controller import AuditController
 from sqlalchemy import or_
+from sqlalchemy.orm import selectinload
 
 class FolderController:
     def __init__(self, user, db: DatabaseManager):
@@ -42,7 +43,7 @@ class FolderController:
         """Get all root folders (no parent)"""
         session = self.db.get_session()
         try:
-            folders = session.query(Folder).filter(
+            folders = session.query(Folder).options(selectinload(Folder.subfolders)).filter(
                 Folder.parent_id.is_(None),
                 Folder.owner_id == self.user.id
             ).all()
@@ -63,7 +64,12 @@ class FolderController:
         """Update folder properties"""
         session = self.db.get_session()
         try:
-            folder = session.query(Folder).filter(Folder.id == folder_id).first()
+            folder = (
+                session.query(Folder)
+                .options(selectinload(Folder.subfolders))
+                .filter(Folder.id == folder_id)
+                .first()
+                )
             if not folder:
                 return False, "Dossier non trouvé"
             
