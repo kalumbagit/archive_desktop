@@ -45,7 +45,7 @@ class AuthController:
                 session.commit()
                 
                 # Log login action
-                audit = AuditController(user)
+                audit = AuditController(user,self.db)
                 audit.log_action('LOGIN', 'USER', user.id, 'Connexion réussie')
                 
                 return True, user
