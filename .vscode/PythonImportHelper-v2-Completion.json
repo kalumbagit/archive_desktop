@@ -569,6 +569,22 @@
         "documentation": {}
     },
     {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
         "label": "AuditLog",
         "importPath": "models.audit_log",
         "description": "models.audit_log",
@@ -1936,14 +1952,6 @@
         "documentation": {}
     },
     {
-        "label": "FileController",
-        "importPath": "controllers.file_controller",
-        "description": "controllers.file_controller",
-        "isExtraImport": true,
-        "detail": "controllers.file_controller",
-        "documentation": {}
-    },
-    {
         "label": "AuthController",
         "importPath": "controllers.auth_controller",
         "description": "controllers.auth_controller",
@@ -2194,7 +2202,7 @@
         "kind": 6,
         "importPath": "views.folder_dialog",
         "description": "views.folder_dialog",
-        "peekOfCode": "class FolderDialog(QDialog):\n    \"\"\"Dialog for creating or editing folders\"\"\"\n    def __init__(self, parent, parent_folder=None, folder_to_edit=None):\n        super().__init__(parent)\n        self.user = parent.user\n        self.parent_folder = parent_folder\n        self.folder_to_edit = folder_to_edit\n        self.folder_controller = FolderController(self.user)\n        self.setWindowTitle(\"Nouveau dossier\" if not folder_to_edit else \"Modifier le dossier\")\n        self.init_ui()",
+        "peekOfCode": "class FolderDialog(QDialog):\n    \"\"\"Dialog for creating or editing folders\"\"\"\n    def __init__(self, parent, db: DatabaseManager, parent_folder=None, folder_to_edit=None):\n        super().__init__(parent)\n        self.user = parent.user\n        self.parent_folder = parent_folder\n        self.folder_to_edit = folder_to_edit\n        self.folder_controller = FolderController(self.user, db)\n        self.setWindowTitle(\"Nouveau dossier\" if not folder_to_edit else \"Modifier le dossier\")\n        self.init_ui()",
         "detail": "views.folder_dialog",
         "documentation": {}
     },
@@ -2266,7 +2274,7 @@
         "kind": 6,
         "importPath": "views.search_window",
         "description": "views.search_window",
-        "peekOfCode": "class SearchWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.user = parent.user\n        self.folder_controller = FolderController(self.user)\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Recherche avancée\")\n        self.setGeometry(200, 200, 800, 600)\n        layout = QVBoxLayout()",
+        "peekOfCode": "class SearchWindow(QDialog):\n    def __init__(self, parent, db: DatabaseManager):\n        super().__init__(parent)\n        self.user = parent.user\n        self.db=db\n        self.folder_controller = FolderController(self.user,self.db)\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Recherche avancée\")\n        self.setGeometry(200, 200, 800, 600)",
         "detail": "views.search_window",
         "documentation": {}
     },

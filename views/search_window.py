@@ -4,13 +4,14 @@ from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel,
                                QTableWidgetItem, QHeaderView, QSpinBox)
 from PySide6.QtCore import Qt
 from controllers.folder_controller import FolderController
-from controllers.file_controller import FileController
+from database.db_manager import DatabaseManager
 
 class SearchWindow(QDialog):
-    def __init__(self, parent):
+    def __init__(self, parent, db: DatabaseManager):
         super().__init__(parent)
         self.user = parent.user
-        self.folder_controller = FolderController(self.user)
+        self.db=db
+        self.folder_controller = FolderController(self.user,self.db)
         self.init_ui()
     
     def init_ui(self):

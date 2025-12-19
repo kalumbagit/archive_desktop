@@ -235,7 +235,7 @@ class MainWindow(QMainWindow):
     def create_new_folder(self):
         """Créer un nouveau dossier"""
         from views.folder_dialog import FolderDialog
-        dialog = FolderDialog(self, self.current_folder)
+        dialog = FolderDialog(self, self.current_folder, db=self.db)
         if dialog.exec():
             self.load_folders()
     
@@ -262,7 +262,7 @@ class MainWindow(QMainWindow):
     def open_search_window(self):
         """Ouvrir la fenêtre de recherche"""
         from views.search_window import SearchWindow
-        window = SearchWindow(self)
+        window = SearchWindow(self,self.db)
         window.show()
     
     def open_settings(self):

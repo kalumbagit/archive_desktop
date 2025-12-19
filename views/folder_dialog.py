@@ -5,16 +5,17 @@ from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel,
 from PySide6.QtCore import Qt
 from controllers.folder_controller import FolderController
 from utils.validators import Validator
+from database.db_manager import DatabaseManager
 
 class FolderDialog(QDialog):
     """Dialog for creating or editing folders"""
     
-    def __init__(self, parent, parent_folder=None, folder_to_edit=None):
+    def __init__(self, parent, db: DatabaseManager, parent_folder=None, folder_to_edit=None):
         super().__init__(parent)
         self.user = parent.user
         self.parent_folder = parent_folder
         self.folder_to_edit = folder_to_edit
-        self.folder_controller = FolderController(self.user)
+        self.folder_controller = FolderController(self.user, db)
         
         self.setWindowTitle("Nouveau dossier" if not folder_to_edit else "Modifier le dossier")
         self.init_ui()
