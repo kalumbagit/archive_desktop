@@ -40,7 +40,7 @@ class FolderController:
             session.close()
     
     def get_root_folders(self):
-        """Get all root folders (no parent)"""
+        """Get all root folders (no parent) and load all subfolders recursively"""
         session = self.db.get_session()
         try:
             folders = (
@@ -49,16 +49,40 @@ class FolderController:
                 .filter(
                     Folder.parent_id.is_(None),
                     Folder.owner_id == self.user.id
-                ).all())
+                )
+                .all()
+            )
+
+            # Charger récursivement tous les sous-dossiers
+            for folder in folders:
+                self._load_all_subfolders(folder, session)
+
+            # Détacher les objets pour éviter DetachedInstanceError
+            session.expunge_all()
             return folders
         finally:
             session.close()
-    
+
+    def _load_all_subfolders(self, folder, session):
+        """Forcer le chargement récursif de tous les sous-dossiers"""
+        # Accéder à folder.subfolders pour déclencher le chargement
+        for sub in folder.subfolders:
+            # Charger aussi les sous-niveaux
+            self._load_all_subfolders(sub, session)
+
     def get_folder_by_id(self, folder_id):
         """Get folder by ID"""
         session = self.db.get_session()
         try:
-            folder = session.query(Folder).filter(Folder.id == folder_id).first()
+            folder = (
+                session.query(Folder)
+                .options(selectinload(Folder.subfolders))
+                .filter(Folder.id == folder_id)
+                .first()
+            )
+            if folder:
+                self._load_all_subfolders(folder, session)
+                session.expunge_all()
             return folder
         finally:
             session.close()
@@ -72,7 +96,7 @@ class FolderController:
                 .options(selectinload(Folder.subfolders))
                 .filter(Folder.id == folder_id)
                 .first()
-                )
+            )
             if not folder:
                 return False, "Dossier non trouvé"
             
@@ -134,8 +158,17 @@ class FolderController:
             if sector:
                 filters.append(Folder.sector.ilike(f'%{sector}%'))
             
-            folders = session.query(Folder).filter(*filters).all()
+            folders = (
+                session.query(Folder)
+                .options(selectinload(Folder.subfolders))
+                .filter(*filters)
+                .all()
+            )
+
+            for folder in folders:
+                self._load_all_subfolders(folder, session)
+
+            session.expunge_all()
             return folders
         finally:
             session.close()
-
