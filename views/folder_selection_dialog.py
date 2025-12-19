@@ -5,14 +5,16 @@ from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel,
                                QPushButton, QTreeWidget, QTreeWidgetItem)
 from PySide6.QtCore import Qt
 from controllers.folder_controller import FolderController
+from database.db_manager import DatabaseManager
 
 class FolderSelectionDialog(QDialog):
     """Dialog for selecting a folder from archive"""
     
-    def __init__(self, parent, user):
+    def __init__(self, parent, user,db:DatabaseManager):
         super().__init__(parent)
         self.user = user
-        self.folder_controller = FolderController(user)
+        self.db=db
+        self.folder_controller = FolderController(self.user,self.db)
         self.selected_folder = None
         self.init_ui()
     

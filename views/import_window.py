@@ -171,7 +171,7 @@ class ImportWindow(QDialog):
         """Select destination folder from archive"""
         # TODO: Implement folder selection dialog from archive folders
         from views.folder_selection_dialog import FolderSelectionDialog
-        dialog = FolderSelectionDialog(self, self.user)
+        dialog = FolderSelectionDialog(self, self.user, self.db)
         if dialog.exec():
             self.destination_folder = dialog.selected_folder
             self.dest_label.setText(self.destination_folder.name)

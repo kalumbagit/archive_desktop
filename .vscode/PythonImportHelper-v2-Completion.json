@@ -593,6 +593,14 @@
         "documentation": {}
     },
     {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
         "label": "AuditLog",
         "importPath": "models.audit_log",
         "description": "models.audit_log",
@@ -2227,7 +2235,7 @@
         "kind": 6,
         "importPath": "views.folder_selection_dialog",
         "description": "views.folder_selection_dialog",
-        "peekOfCode": "class FolderSelectionDialog(QDialog):\n    \"\"\"Dialog for selecting a folder from archive\"\"\"\n    def __init__(self, parent, user):\n        super().__init__(parent)\n        self.user = user\n        self.folder_controller = FolderController(user)\n        self.selected_folder = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Sélectionner un dossier\")",
+        "peekOfCode": "class FolderSelectionDialog(QDialog):\n    \"\"\"Dialog for selecting a folder from archive\"\"\"\n    def __init__(self, parent, user,db:DatabaseManager):\n        super().__init__(parent)\n        self.user = user\n        self.db=db\n        self.folder_controller = FolderController(self.user,self.db)\n        self.selected_folder = None\n        self.init_ui()\n    def init_ui(self):",
         "detail": "views.folder_selection_dialog",
         "documentation": {}
     },
