@@ -125,9 +125,8 @@ class SearchWindow(QDialog):
         )
 
         print(folders)
-        for f in folders:
-            print(f)
-            
+        
+
         # Display results
         self.results_table.setRowCount(0)
         
