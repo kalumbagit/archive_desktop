@@ -295,7 +295,7 @@ class PreviewWindow(QDialog):
             else:  # Linux et autres Unix
                 subprocess.run(['xdg-open', file_path])
             
-            self.statusBar().showMessage(f"Fichier ouvert: {self.file.name}", 3000)
+            self.parent_window.statusBar().showMessage(f"Fichier ouvert: {self.file.name}", 3000)
             
         except Exception as e:
             QMessageBox.critical(
