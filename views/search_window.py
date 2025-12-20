@@ -123,7 +123,7 @@ class SearchWindow(QDialog):
             theme=theme,
             sector=sector
         )
-        
+        print("search start with status 200 OK ")
         # Display results
         self.results_table.setRowCount(0)
         
