@@ -123,7 +123,11 @@ class SearchWindow(QDialog):
             theme=theme,
             sector=sector
         )
-        print("search start with status 200 OK ")
+
+        print(folders)
+        for f in folders:
+            print(f)
+            
         # Display results
         self.results_table.setRowCount(0)
         
