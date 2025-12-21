@@ -3,7 +3,7 @@
 /* Thème clair pour l'application */
 
 QMainWindow {
-    background-color: #f5f6fa;
+    background-color: #3ec3f3ff;
 }
 
 QWidget {
