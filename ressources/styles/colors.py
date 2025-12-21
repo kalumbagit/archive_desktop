@@ -1,0 +1,40 @@
+# resources/styles/colors.py
+
+LIGHT_COLORS = {
+    'MAIN_BG': '#3ec3f3ff',
+    'TEXT_COLOR': '#2c3e50',
+    'MENU_BG': '#ecf0f1',
+    'MENU_BORDER': '#bdc3c7',
+    'PRIMARY': '#3498db',
+    'PRIMARY_HOVER': '#2980b9',
+    'PRIMARY_PRESSED': '#21618c',
+    'DISABLED_BG': '#95a5a6',
+    'DISABLED_TEXT': '#ecf0f1',
+    'HEADER_BG': '#34495e',
+    'HEADER_TEXT': '#ffffff',
+    'SUCCESS': '#2ecc71',
+    'INPUT_BG': '#3ec3f3ff',
+    'INPUT_BORDER': '#bdc3c7',
+    'SCROLL_HANDLE': '#95a5a6',
+    'SCROLL_HANDLE_HOVER': '#7f8c8d',
+}
+
+DARK_COLORS = {
+    'MAIN_BG': '#2d2d2d',
+    'WINDOW_BG': '#1e1e1e',
+    'TEXT_COLOR': '#e0e0e0',
+    'MENU_BG': '#252525',
+    'MENU_BORDER': '#3d3d3d',
+    'PRIMARY': '#0d7377',
+    'PRIMARY_HOVER': '#14a085',
+    'PRIMARY_PRESSED': '#0a5a5d',
+    'DISABLED_BG': '#3d3d3d',
+    'DISABLED_TEXT': '#666666',
+    'HEADER_BG': '#1e1e1e',
+    'HEADER_TEXT': '#e0e0e0',
+    'SUCCESS': '#0d7377',
+    'INPUT_BG': '#3d3d3d',
+    'INPUT_BORDER': '#4d4d4d',
+    'SCROLL_HANDLE': '#4d4d4d',
+    'SCROLL_HANDLE_HOVER': '#5d5d5d',
+}

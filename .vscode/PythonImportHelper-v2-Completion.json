@@ -1783,6 +1783,22 @@
         "documentation": {}
     },
     {
+        "label": "LIGHT_COLORS",
+        "importPath": "ressources.styles.colors",
+        "description": "ressources.styles.colors",
+        "isExtraImport": true,
+        "detail": "ressources.styles.colors",
+        "documentation": {}
+    },
+    {
+        "label": "DARK_COLORS",
+        "importPath": "ressources.styles.colors",
+        "description": "ressources.styles.colors",
+        "isExtraImport": true,
+        "detail": "ressources.styles.colors",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -2193,6 +2209,24 @@
         "documentation": {}
     },
     {
+        "label": "LIGHT_COLORS",
+        "kind": 5,
+        "importPath": "ressources.styles.colors",
+        "description": "ressources.styles.colors",
+        "peekOfCode": "LIGHT_COLORS = {\n    'MAIN_BG': '#3ec3f3ff',\n    'TEXT_COLOR': '#2c3e50',\n    'MENU_BG': '#ecf0f1',\n    'MENU_BORDER': '#bdc3c7',\n    'PRIMARY': '#3498db',\n    'PRIMARY_HOVER': '#2980b9',\n    'PRIMARY_PRESSED': '#21618c',\n    'DISABLED_BG': '#95a5a6',\n    'DISABLED_TEXT': '#ecf0f1',",
+        "detail": "ressources.styles.colors",
+        "documentation": {}
+    },
+    {
+        "label": "DARK_COLORS",
+        "kind": 5,
+        "importPath": "ressources.styles.colors",
+        "description": "ressources.styles.colors",
+        "peekOfCode": "DARK_COLORS = {\n    'MAIN_BG': '#2d2d2d',\n    'WINDOW_BG': '#1e1e1e',\n    'TEXT_COLOR': '#e0e0e0',\n    'MENU_BG': '#252525',\n    'MENU_BORDER': '#3d3d3d',\n    'PRIMARY': '#0d7377',\n    'PRIMARY_HOVER': '#14a085',\n    'PRIMARY_PRESSED': '#0a5a5d',\n    'DISABLED_BG': '#3d3d3d',",
+        "detail": "ressources.styles.colors",
+        "documentation": {}
+    },
+    {
         "label": "FileHandler",
         "kind": 6,
         "importPath": "utils.file_handler",
@@ -2224,7 +2258,7 @@
         "kind": 6,
         "importPath": "utils.theme_manager",
         "description": "utils.theme_manager",
-        "peekOfCode": "class ThemeManager:\n    \"\"\"Manage application themes\"\"\"\n    THEMES = {\n        'light': 'resources/styles/light_theme.qss',\n        'dark': 'resources/styles/dark_theme.qss'\n    }\n    @staticmethod\n    def apply_theme(theme_name='light'):\n        \"\"\"Apply theme to application\"\"\"\n        app = QApplication.instance()",
+        "peekOfCode": "class ThemeManager:\n    \"\"\"Manage application themes\"\"\"\n    THEMES = {\n        'light': 'resources/styles/light_theme.qss',\n        'dark': 'resources/styles/dark_theme.qss'\n    }\n    @staticmethod\n    def apply_theme(theme_name='light'):\n        app = QApplication.instance()\n        if app is None:",
         "detail": "utils.theme_manager",
         "documentation": {}
     },
