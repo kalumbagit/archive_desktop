@@ -1888,14 +1888,6 @@
         "documentation": {}
     },
     {
-        "label": "Qt",
-        "importPath": "PySide6.QtCore",
-        "description": "PySide6.QtCore",
-        "isExtraImport": true,
-        "detail": "PySide6.QtCore",
-        "documentation": {}
-    },
-    {
         "label": "FolderController",
         "importPath": "controllers.folder_controller",
         "description": "controllers.folder_controller",
@@ -2047,6 +2039,14 @@
         "description": "views.main_window",
         "isExtraImport": true,
         "detail": "views.main_window",
+        "documentation": {}
+    },
+    {
+        "label": "ThemeManager",
+        "importPath": "utils.theme_manager",
+        "description": "utils.theme_manager",
+        "isExtraImport": true,
+        "detail": "utils.theme_manager",
         "documentation": {}
     },
     {

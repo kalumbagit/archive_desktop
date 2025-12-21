@@ -6,11 +6,11 @@ main.py - Point d'entrée de l'application
 """
 import sys
 from PySide6.QtWidgets import QApplication
-from PySide6.QtCore import Qt
 from database.db_manager import DatabaseManager
 from config.settings import Settings
 from views.login_window import LoginWindow
 from views.main_window import MainWindow
+from utils.theme_manager import ThemeManager   # ✅ ajout
 
 def main():
     # Create application
@@ -27,6 +27,15 @@ def main():
         db_type=db_config.get('type', 'sqlite'),
         db_path=db_config.get('path')
     )
+
+    # Appliquer le thème choisi
+    theme = settings.get('ui.theme', 'light')
+    if theme == 'system':
+        # Détection simple du thème système
+        palette = app.palette()
+        bg_color = palette.window().color().lightness()
+        theme = 'dark' if bg_color < 128 else 'light'
+    ThemeManager.apply_theme(theme)
     
     # Show login window
     login_window = LoginWindow(db)
@@ -46,4 +55,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
