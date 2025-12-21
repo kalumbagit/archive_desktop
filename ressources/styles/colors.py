@@ -15,8 +15,8 @@ LIGHT_COLORS = {
     'SUCCESS': '#2ecc71',
     'INPUT_BG': '#3ec3f3ff',
     'INPUT_BORDER': '#bdc3c7',
-    'SCROLL_HANDLE': '#95a5a6',
     'SCROLL_HANDLE_HOVER': '#7f8c8d',
+    'SCROLL_HANDLE': '#95a5a6',
 }
 
 DARK_COLORS = {
@@ -35,6 +35,6 @@ DARK_COLORS = {
     'SUCCESS': '#0d7377',
     'INPUT_BG': '#3d3d3d',
     'INPUT_BORDER': '#4d4d4d',
-    'SCROLL_HANDLE': '#4d4d4d',
     'SCROLL_HANDLE_HOVER': '#5d5d5d',
+    'SCROLL_HANDLE': '#4d4d4d',
 }
