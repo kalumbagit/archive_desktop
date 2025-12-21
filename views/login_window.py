@@ -8,12 +8,11 @@ from database.db_manager import DatabaseManager
 class LoginWindow(QDialog):
     def __init__(self, db: DatabaseManager):
         super().__init__()
-        self.db=db
+        self.db = db
         self.auth_controller = AuthController(self.db)
         self.user = None
         self.init_ui()
 
-    
     def init_ui(self):
         self.setWindowTitle("Connexion - Gestionnaire d'Archives")
         self.setFixedSize(400, 450)
@@ -105,15 +104,22 @@ class LoginWindow(QDialog):
         else:
             QMessageBox.critical(self, "Erreur de connexion", result)
     
-    def open_register(self): 
-        from views.register_window import RegisterWindow 
-        # Fermer la fenêtre de login AVANT d’ouvrir l’inscription 
-        self.hide() # ou self.close() 
-        register_window = RegisterWindow(self.db) 
-        if register_window.exec(): 
-            QMessageBox.information( self, "Succès", "Compte créé avec succès! Vous pouvez maintenant vous connecter." ) 
-            # Réafficher la fenêtre de login après inscription 
-            self.show() 
-        else: 
-            # Si l’utilisateur annule, on réaffiche la fenêtre de login 
-            self.show()
+    def open_register(self):
+        from views.register_window import RegisterWindow
+        
+        # Créer et afficher la fenêtre d'inscription
+        register_window = RegisterWindow(self.db)
+        result = register_window.exec()
+        
+        # La fenêtre de login reste visible en arrière-plan
+        # Après la fermeture du dialogue d'inscription
+        if result == QDialog.Accepted:
+            QMessageBox.information(
+                self, 
+                "Succès", 
+                "Compte créé avec succès! Vous pouvez maintenant vous connecter."
+            )
+            # Optionnel: pré-remplir le nom d'utilisateur
+            if hasattr(register_window, 'username_input'):
+                self.username_input.setText(register_window.username_input.text())
+                self.password_input.setFocus()

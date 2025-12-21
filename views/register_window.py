@@ -1,4 +1,3 @@
-
 # views/register_window.py
 from PySide6.QtWidgets import (QDialog, QVBoxLayout, QLabel, QLineEdit,
                                QPushButton, QMessageBox)
@@ -143,6 +142,7 @@ class RegisterWindow(QDialog):
         success, message = self.auth_controller.register(username, email, password)
         
         if success:
-            self.close() # ferme juste la fenêtre d'inscription
+            # ✅ Utiliser accept() au lieu de close() pour indiquer le succès
+            self.accept()
         else:
             QMessageBox.critical(self, "Erreur d'inscription", message)

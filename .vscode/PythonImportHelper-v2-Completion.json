@@ -2312,7 +2312,7 @@
         "kind": 6,
         "importPath": "views.login_window",
         "description": "views.login_window",
-        "peekOfCode": "class LoginWindow(QDialog):\n    def __init__(self, db: DatabaseManager):\n        super().__init__()\n        self.db=db\n        self.auth_controller = AuthController(self.db)\n        self.user = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Connexion - Gestionnaire d'Archives\")\n        self.setFixedSize(400, 450)",
+        "peekOfCode": "class LoginWindow(QDialog):\n    def __init__(self, db: DatabaseManager):\n        super().__init__()\n        self.db = db\n        self.auth_controller = AuthController(self.db)\n        self.user = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Connexion - Gestionnaire d'Archives\")\n        self.setFixedSize(400, 450)",
         "detail": "views.login_window",
         "documentation": {}
     },
