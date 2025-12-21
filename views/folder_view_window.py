@@ -207,8 +207,9 @@ class FolderViewWindow(QDialog):
         """Charger les sous-dossiers"""
         self.subfolders_tree.clear()
         
-        # Récupérer les sous-dossiers
-        subfolders = self.folder_controller.get_subfolders(self.folder.id)
+        # Utiliser directement les sous-dossiers déjà chargés
+        # car folder_controller charge récursivement avec selectinload
+        subfolders = self.folder.subfolders if hasattr(self.folder, 'subfolders') else []
         
         for subfolder in subfolders:
             self.add_subfolder_to_tree(subfolder, None)
