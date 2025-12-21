@@ -62,7 +62,7 @@ class SearchWindow(QDialog):
         type_layout = QHBoxLayout()
         type_layout.addWidget(QLabel("Type:"))
         self.type_combo = QComboBox()
-        self.type_combo.addItems(["Tous", "Dossiers uniquement", "Fichiers uniquement"])
+        self.type_combo.addItems(["Tous", "Dossiers", "Fichiers (cette fonctionnalité n'est pas encore implémentée)"])
         type_layout.addWidget(self.type_combo)
         type_layout.addStretch()
         criteria_layout.addLayout(type_layout)

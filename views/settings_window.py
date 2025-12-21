@@ -123,21 +123,45 @@ class SettingsWindow(QDialog):
         layout = QVBoxLayout()
         
         db_group = QGroupBox("Configuration de la base de données")
-        db_layout = QFormLayout()
+        self.db_layout = QFormLayout()
         
+        # Type de base
         self.db_type_combo = QComboBox()
         self.db_type_combo.addItems(["SQLite", "PostgreSQL", "MySQL"])
         current_db = self.settings.get('database.type', 'sqlite')
         db_map = {'sqlite': 0, 'postgresql': 1, 'mysql': 2}
         self.db_type_combo.setCurrentIndex(db_map.get(current_db, 0))
+        self.db_type_combo.currentIndexChanged.connect(self.toggle_db_fields)
+        self.db_layout.addRow("Type de base:", self.db_type_combo)
         
-        db_layout.addRow("Type de base:", self.db_type_combo)
-        
+        # Champ SQLite
         self.db_path_input = QLineEdit()
         self.db_path_input.setText(self.settings.get('database.path', ''))
-        db_layout.addRow("Chemin:", self.db_path_input)
+        self.db_layout.addRow("Chemin:", self.db_path_input)
         
-        db_group.setLayout(db_layout)
+        # Champs serveur (PostgreSQL/MySQL)
+        self.db_host_input = QLineEdit()
+        self.db_host_input.setText(self.settings.get('database.host', 'localhost'))
+        self.db_layout.addRow("Hôte:", self.db_host_input)
+        
+        self.db_port_input = QLineEdit()
+        self.db_port_input.setText(str(self.settings.get('database.port', '')))
+        self.db_layout.addRow("Port:", self.db_port_input)
+        
+        self.db_user_input = QLineEdit()
+        self.db_user_input.setText(self.settings.get('database.user', ''))
+        self.db_layout.addRow("Utilisateur:", self.db_user_input)
+        
+        self.db_password_input = QLineEdit()
+        self.db_password_input.setEchoMode(QLineEdit.Password)
+        self.db_password_input.setText(self.settings.get('database.password', ''))
+        self.db_layout.addRow("Mot de passe:", self.db_password_input)
+        
+        self.db_name_input = QLineEdit()
+        self.db_name_input.setText(self.settings.get('database.database', ''))
+        self.db_layout.addRow("Base:", self.db_name_input)
+        
+        db_group.setLayout(self.db_layout)
         layout.addWidget(db_group)
         
         warning_label = QLabel(
@@ -148,8 +172,29 @@ class SettingsWindow(QDialog):
         
         layout.addStretch()
         widget.setLayout(layout)
+        
+        # Initialiser l’affichage selon le type
+        self.toggle_db_fields(self.db_type_combo.currentIndex())
+        
         return widget
-    
+
+    def toggle_db_fields(self, index):
+        """Afficher/masquer les champs selon le type de base"""
+        if index == 0:  # SQLite
+            self.db_path_input.show()
+            self.db_host_input.hide()
+            self.db_port_input.hide()
+            self.db_user_input.hide()
+            self.db_password_input.hide()
+            self.db_name_input.hide()
+        else:  # PostgreSQL ou MySQL
+            self.db_path_input.hide()
+            self.db_host_input.show()
+            self.db_port_input.show()
+            self.db_user_input.show()
+            self.db_password_input.show()
+            self.db_name_input.show()
+
     def create_permissions_tab(self):
         """Create permissions settings tab"""
         widget = QWidget()
@@ -218,16 +263,25 @@ class SettingsWindow(QDialog):
         
         # Database
         db_types = {0: 'sqlite', 1: 'postgresql', 2: 'mysql'}
-        self.settings.set('database.type', db_types[self.db_type_combo.currentIndex()])
-        self.settings.set('database.path', self.db_path_input.text())
+        db_type = db_types[self.db_type_combo.currentIndex()]
+        self.settings.set('database.type', db_type)
+        
+        if db_type == 'sqlite':
+            self.settings.set('database.path', self.db_path_input.text())
+        else:
+            self.settings.set('database.host', self.db_host_input.text())
+            self.settings.set('database.port', self.db_port_input.text())
+            self.settings.set('database.user', self.db_user_input.text())
+            self.settings.set('database.password', self.db_password_input.text())
+            self.settings.set('database.database', self.db_name_input.text())
         
         # Permissions
         self.settings.set('permissions.allow_file_deletion', 
-                         self.allow_deletion_cb.isChecked())
+                        self.allow_deletion_cb.isChecked())
         self.settings.set('permissions.allow_folder_deletion', 
-                         self.allow_folder_deletion_cb.isChecked())
+                        self.allow_folder_deletion_cb.isChecked())
         self.settings.set('permissions.require_confirmation', 
-                         self.require_confirmation_cb.isChecked())
+                        self.require_confirmation_cb.isChecked())
         
         # UI
         lang_map = {0: 'fr', 1: 'en', 2: 'es'}
@@ -238,3 +292,6 @@ class SettingsWindow(QDialog):
         
         QMessageBox.information(self, "Succès", "Paramètres enregistrés avec succès")
         self.accept()
+
+
+   
