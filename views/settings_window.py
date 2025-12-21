@@ -4,7 +4,7 @@
 from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel,
                                QLineEdit, QPushButton, QComboBox, QCheckBox,
                                QTabWidget, QWidget, QFileDialog, QMessageBox,
-                               QGroupBox, QFormLayout)
+                               QGroupBox, QFormLayout,QSpinBox)
 from PySide6.QtCore import Qt
 from config.settings import Settings
 
@@ -144,8 +144,9 @@ class SettingsWindow(QDialog):
         self.db_host_input.setText(self.settings.get('database.host', 'localhost'))
         self.db_layout.addRow("Hôte:", self.db_host_input)
         
-        self.db_port_input = QLineEdit()
-        self.db_port_input.setText(str(self.settings.get('database.port', '')))
+        self.db_port_input = QSpinBox() 
+        self.db_port_input.setRange(1, 65535) # ports valides
+        self.db_port_input.setValue(int(self.settings.get('database.port', 5432))) # valeur par défaut
         self.db_layout.addRow("Port:", self.db_port_input)
         
         self.db_user_input = QLineEdit()
