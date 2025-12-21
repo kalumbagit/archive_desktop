@@ -115,7 +115,10 @@ class SearchWindow(QDialog):
         year = self.year_input.value() if self.year_input.value() > 0 else None
         theme = self.theme_input.text().strip() or None
         sector = self.sector_input.text().strip() or None
-        
+
+        print("###"*10)
+        print(f"Recherche avec - Mot-clé: {keyword}, Année: {year}, Thème: {theme}, Secteur: {sector}")
+        print("###"*10)
         # Search folders
         folders = self.folder_controller.search_folders(
             query=keyword,
