@@ -1439,6 +1439,14 @@
         "documentation": {}
     },
     {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QDialog",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -1968,6 +1976,14 @@
         "documentation": {}
     },
     {
+        "label": "QCloseEvent",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
         "label": "QPixmap",
         "importPath": "PySide6.QtGui",
         "description": "PySide6.QtGui",
@@ -2321,7 +2337,7 @@
         "kind": 6,
         "importPath": "views.main_window",
         "description": "views.main_window",
-        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"Fenêtre principale de l'application\"\"\"\n    def __init__(self, user, db: DatabaseManager):\n        super().__init__()\n        self.user = user\n        self.db = db\n        self.current_folder = None\n        # Controllers\n        self.folder_controller = FolderController(user,self.db)\n        self.file_controller = FileController(user,self.db)",
+        "peekOfCode": "class MainWindow(QMainWindow):\n    \"\"\"Fenêtre principale de l'application\"\"\"\n    def __init__(self, user, db: DatabaseManager):\n        super().__init__()\n        self.user = user\n        self.db = db\n        self.current_folder = None\n        self.should_logout = False  # Flag pour gérer la déconnexion\n        # Controllers\n        self.folder_controller = FolderController(user, self.db)",
         "detail": "views.main_window",
         "documentation": {}
     },

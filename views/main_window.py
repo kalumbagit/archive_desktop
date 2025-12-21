@@ -1,15 +1,12 @@
-# =============================================================================
-# FICHIER 2: views/main_window.py - CORRIGÉ ET COMPLET
-# =============================================================================
 """
-views/main_window.py - Fenêtre principale de l'application
+views/main_window.py - Fenêtre principale avec gestion de la déconnexion
 """
 from PySide6.QtWidgets import (QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
                                QTreeWidget, QTreeWidgetItem, QPushButton, QLabel,
                                QLineEdit, QToolBar, QMenu, QMessageBox, QFileDialog,
-                               QSplitter, QListWidget, QComboBox)
+                               QSplitter, QListWidget, QComboBox, QApplication)
 from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QAction
+from PySide6.QtGui import QAction, QCloseEvent
 from controllers.folder_controller import FolderController
 from controllers.file_controller import FileController
 from controllers.audit_controller import AuditController
@@ -23,11 +20,12 @@ class MainWindow(QMainWindow):
         self.user = user
         self.db = db
         self.current_folder = None
+        self.should_logout = False  # Flag pour gérer la déconnexion
         
         # Controllers
-        self.folder_controller = FolderController(user,self.db)
-        self.file_controller = FileController(user,self.db)
-        self.audit_controller = AuditController(user,self.db)
+        self.folder_controller = FolderController(user, self.db)
+        self.file_controller = FileController(user, self.db)
+        self.audit_controller = AuditController(user, self.db)
         
         self.init_ui()
         self.load_folders()
@@ -255,14 +253,14 @@ class MainWindow(QMainWindow):
     def open_import_window(self):
         """Ouvrir la fenêtre d'import"""
         from views.import_window import ImportWindow
-        window = ImportWindow(self,self.db)
+        window = ImportWindow(self, self.db)
         if window.exec():
             self.refresh_view()
     
     def open_search_window(self):
         """Ouvrir la fenêtre de recherche"""
         from views.search_window import SearchWindow
-        window = SearchWindow(self,self.db)
+        window = SearchWindow(self, self.db)
         window.show()
     
     def open_settings(self):
@@ -325,9 +323,49 @@ class MainWindow(QMainWindow):
         self.statusBar().showMessage('Actualisé')
     
     def logout(self):
-        """Déconnexion"""
-        self.close()
-        # Relancer la fenêtre de login
+        """Déconnexion et retour à l'écran de login"""
+        reply = QMessageBox.question(
+            self,
+            'Déconnexion',
+            'Êtes-vous sûr de vouloir vous déconnecter?',
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No
+        )
+        
+        if reply == QMessageBox.Yes:
+            # Logger l'action de déconnexion
+            self.audit_controller.log_action('LOGOUT', 'USER', self.user.id)
+            
+            # Définir le flag de déconnexion
+            self.should_logout = True
+            
+            # Fermer la fenêtre principale
+            self.close()
+            
+            # Quitter la boucle d'événements pour revenir au login
+            QApplication.quit()
+    
+    def closeEvent(self, event: QCloseEvent):
+        """Gérer la fermeture de la fenêtre"""
+        if not self.should_logout:
+            # L'utilisateur ferme l'application normalement (croix rouge)
+            reply = QMessageBox.question(
+                self,
+                'Quitter',
+                'Êtes-vous sûr de vouloir quitter l\'application?',
+                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.No
+            )
+            
+            if reply == QMessageBox.Yes:
+                # Logger la fermeture
+                self.audit_controller.log_action('LOGOUT', 'USER', self.user.id)
+                event.accept()
+            else:
+                event.ignore()
+        else:
+            # Déconnexion demandée, accepter la fermeture
+            event.accept()
     
     def show_about(self):
         """Afficher À propos"""
@@ -337,5 +375,3 @@ class MainWindow(QMainWindow):
             "Gestionnaire d'Archives Numériques\nVersion 1.0\n\n"
             "Application de gestion d'archives avec PySide6"
         )
-
-
