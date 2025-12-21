@@ -6,8 +6,8 @@ from ressources.styles.colors import LIGHT_COLORS, DARK_COLORS  # ✅ correction
 class ThemeManager:
     """Manage application themes"""
     THEMES = {
-        'light': 'resources/styles/light_theme.qss',
-        'dark': 'resources/styles/dark_theme.qss'
+        'light': 'ressources/styles/light_theme.qss',
+        'dark': 'ressources/styles/dark_theme.qss'
     }
     
     @staticmethod

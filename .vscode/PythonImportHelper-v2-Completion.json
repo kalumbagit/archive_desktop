@@ -2258,7 +2258,7 @@
         "kind": 6,
         "importPath": "utils.theme_manager",
         "description": "utils.theme_manager",
-        "peekOfCode": "class ThemeManager:\n    \"\"\"Manage application themes\"\"\"\n    THEMES = {\n        'light': 'resources/styles/light_theme.qss',\n        'dark': 'resources/styles/dark_theme.qss'\n    }\n    @staticmethod\n    def apply_theme(theme_name='light'):\n        app = QApplication.instance()\n        if app is None:",
+        "peekOfCode": "class ThemeManager:\n    \"\"\"Manage application themes\"\"\"\n    THEMES = {\n        'light': 'ressources/styles/light_theme.qss',\n        'dark': 'ressources/styles/dark_theme.qss'\n    }\n    @staticmethod\n    def apply_theme(theme_name='light'):\n        app = QApplication.instance()\n        if app is None:",
         "detail": "utils.theme_manager",
         "documentation": {}
     },
