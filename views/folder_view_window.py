@@ -146,7 +146,7 @@ class FolderViewWindow(QDialog):
         layout = QVBoxLayout(panel)
         
         # Titre
-        title = QLabel("Sous-dossiers")
+        title = QLabel("Arborescence complète")
         title.setStyleSheet("font-size: 14px; font-weight: bold; color: #2c3e50;")
         layout.addWidget(title)
         
@@ -155,7 +155,7 @@ class FolderViewWindow(QDialog):
         self.subfolders_tree.setHeaderLabel("Nom")
         self.subfolders_tree.setContextMenuPolicy(Qt.CustomContextMenu)
         self.subfolders_tree.customContextMenuRequested.connect(self.show_subfolder_context_menu)
-        self.subfolders_tree.itemDoubleClicked.connect(self.open_subfolder)
+        self.subfolders_tree.itemClicked.connect(self.on_subfolder_selected)
         layout.addWidget(self.subfolders_tree)
         
         # Compteur
@@ -170,10 +170,10 @@ class FolderViewWindow(QDialog):
         panel = QWidget()
         layout = QVBoxLayout(panel)
         
-        # Titre
-        title = QLabel("Fichiers")
-        title.setStyleSheet("font-size: 14px; font-weight: bold; color: #2c3e50;")
-        layout.addWidget(title)
+        # Titre avec nom du dossier sélectionné
+        self.files_title = QLabel("Fichiers")
+        self.files_title.setStyleSheet("font-size: 14px; font-weight: bold; color: #2c3e50;")
+        layout.addWidget(self.files_title)
         
         # Table pour les fichiers
         self.files_table = QTableWidget()
@@ -201,20 +201,33 @@ class FolderViewWindow(QDialog):
     def load_data(self):
         """Charger les sous-dossiers et fichiers"""
         self.load_subfolders()
-        self.load_files()
+        # Charger les fichiers du dossier racine par défaut
+        self.load_files_for_folder(self.folder)
     
     def load_subfolders(self):
-        """Charger les sous-dossiers"""
+        """Charger tous les sous-dossiers dans l'arborescence"""
         self.subfolders_tree.clear()
         
         # Utiliser directement les sous-dossiers déjà chargés
-        # car folder_controller charge récursivement avec selectinload
         subfolders = self.folder.subfolders if hasattr(self.folder, 'subfolders') else []
         
+        # Compter tous les sous-dossiers (récursivement)
+        total_count = self.count_all_subfolders(self.folder)
+        
+        # Ajouter tous les sous-dossiers à l'arbre
         for subfolder in subfolders:
             self.add_subfolder_to_tree(subfolder, None)
         
-        self.subfolder_count_label.setText(f"{len(subfolders)} sous-dossier(s)")
+        self.subfolder_count_label.setText(f"{total_count} sous-dossier(s) au total")
+    
+    def count_all_subfolders(self, folder):
+        """Compter récursivement tous les sous-dossiers"""
+        count = 0
+        if hasattr(folder, 'subfolders'):
+            count = len(folder.subfolders)
+            for subfolder in folder.subfolders:
+                count += self.count_all_subfolders(subfolder)
+        return count
     
     def add_subfolder_to_tree(self, folder, parent_item):
         """Ajouter un sous-dossier à l'arbre de manière récursive"""
@@ -228,15 +241,25 @@ class FolderViewWindow(QDialog):
         item.setData(0, Qt.UserRole, folder)
         
         # Charger les sous-dossiers récursivement
-        for subfolder in folder.subfolders:
-            self.add_subfolder_to_tree(subfolder, item)
+        if hasattr(folder, 'subfolders'):
+            for subfolder in folder.subfolders:
+                self.add_subfolder_to_tree(subfolder, item)
     
-    def load_files(self):
-        """Charger les fichiers du dossier"""
+    def on_subfolder_selected(self, item):
+        """Gérer la sélection d'un sous-dossier dans l'arbre"""
+        folder = item.data(0, Qt.UserRole)
+        if folder:
+            self.load_files_for_folder(folder)
+    
+    def load_files_for_folder(self, folder):
+        """Charger les fichiers d'un dossier spécifique"""
         self.files_table.setRowCount(0)
         
+        # Mettre à jour le titre
+        self.files_title.setText(f"Fichiers de: {folder.name}")
+        
         # Récupérer les fichiers
-        files = self.file_controller.get_files_in_folder(self.folder.id)
+        files = self.file_controller.get_files_in_folder(folder.id)
         
         for file in files:
             row = self.files_table.rowCount()
@@ -288,14 +311,6 @@ class FolderViewWindow(QDialog):
             size /= 1024.0
         return f"{size:.1f} TB"
     
-    def open_subfolder(self, item):
-        """Ouvrir un sous-dossier"""
-        subfolder = item.data(0, Qt.UserRole)
-        if subfolder:
-            # Ouvrir une nouvelle fenêtre pour le sous-dossier
-            subfolder_window = FolderViewWindow(subfolder, self.user, self.db, self)
-            subfolder_window.exec()
-    
     def open_file(self, index):
         """Ouvrir un fichier"""
         row = index.row()
@@ -319,14 +334,14 @@ class FolderViewWindow(QDialog):
         
         menu = QMenu()
         
-        open_action = menu.addAction("📂 Ouvrir")
+        show_files_action = menu.addAction("📄 Afficher les fichiers")
         menu.addSeparator()
         properties_action = menu.addAction("ℹ️ Propriétés")
         
         action = menu.exec_(self.subfolders_tree.mapToGlobal(position))
         
-        if action == open_action:
-            self.open_subfolder(item)
+        if action == show_files_action:
+            self.on_subfolder_selected(item)
         elif action == properties_action:
             subfolder = item.data(0, Qt.UserRole)
             self.show_folder_properties(subfolder)
