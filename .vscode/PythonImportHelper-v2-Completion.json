@@ -2495,7 +2495,7 @@
         "kind": 6,
         "importPath": "views.folder_view_window",
         "description": "views.folder_view_window",
-        "peekOfCode": "class FolderViewWindow(QDialog):\n    \"\"\"Fenêtre de visualisation détaillée d'un dossier\"\"\"\n    def __init__(self, folder, user, db: DatabaseManager, parent=None):\n        super().__init__(parent)\n        self.folder = folder\n        self.user = user\n        self.db = db\n        self.file_controller = FileController(user, db)\n        self.folder_controller = FolderController(user, db)\n        self.audit_controller = AuditController(user, db)",
+        "peekOfCode": "class FolderViewWindow(QDialog):\n    \"\"\"Fenêtre de visualisation détaillée d'un dossier\"\"\"\n    def __init__(self, folder, user, db: DatabaseManager, parent=None):\n        super().__init__(parent)\n        self.folder = folder\n        self.user = user\n        self.db = db\n        self.parent_window = parent\n        self.file_controller = FileController(user, db)\n        self.folder_controller = FolderController(user, db)",
         "detail": "views.folder_view_window",
         "documentation": {}
     },

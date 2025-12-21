@@ -19,6 +19,7 @@ class FolderViewWindow(QDialog):
         self.folder = folder
         self.user = user
         self.db = db
+        self.parent_window = parent
         self.file_controller = FileController(user, db)
         self.folder_controller = FolderController(user, db)
         self.audit_controller = AuditController(user, db)
