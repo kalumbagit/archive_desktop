@@ -115,9 +115,6 @@ class SearchWindow(QDialog):
         theme = self.theme_input.text().strip() or None
         sector = self.sector_input.text().strip() or None
 
-        print("###"*10)
-        print(f"Recherche avec - Mot-clé: {keyword}, Année: {year}, Thème: {theme}, Secteur: {sector}")
-        print("###"*10)
         # Search folders
         folders = self.folder_controller.search_folders(
             query=keyword,
@@ -125,9 +122,7 @@ class SearchWindow(QDialog):
             theme=theme,
             sector=sector
         )
-
-        print(folders)
-        
+   
 
         # Display results
         self.results_table.setRowCount(0)

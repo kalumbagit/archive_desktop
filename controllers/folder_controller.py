@@ -183,8 +183,6 @@ class FolderController:
                 self._load_all_subfolders(folder, session)
 
             session.expunge_all()
-            print("voici la requête SQL générée:", str(session.query(Folder).filter(*filters)))
-            print("voici le resultat de recherche:", folders)
             return folders
         finally:
             session.close()
