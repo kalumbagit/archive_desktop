@@ -177,7 +177,7 @@ class FolderController:
             folders = (
                 session.query(Folder)
                 .options(selectinload(Folder.subfolders))
-                .filter(*filters)
+                #.filter(*filters)
                 .all()
             )
 
