@@ -609,6 +609,14 @@
         "documentation": {}
     },
     {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
         "label": "AuditLog",
         "importPath": "models.audit_log",
         "description": "models.audit_log",
@@ -638,6 +646,14 @@
         "description": "models.user",
         "isExtraImport": true,
         "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
         "documentation": {}
     },
     {
@@ -1160,6 +1176,134 @@
     },
     {
         "label": "QMenu",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHeaderView",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QGroupBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QScrollArea",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMenu",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTreeWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSplitter",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -1872,6 +2016,14 @@
         "documentation": {}
     },
     {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
         "label": "Signal",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
@@ -1952,11 +2104,27 @@
         "documentation": {}
     },
     {
+        "label": "FolderController",
+        "importPath": "controllers.folder_controller",
+        "description": "controllers.folder_controller",
+        "isExtraImport": true,
+        "detail": "controllers.folder_controller",
+        "documentation": {}
+    },
+    {
         "label": "Validator",
         "importPath": "utils.validators",
         "description": "utils.validators",
         "isExtraImport": true,
         "detail": "utils.validators",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
         "documentation": {}
     },
     {
@@ -1997,6 +2165,14 @@
         "description": "PySide6.QtGui",
         "isExtraImport": true,
         "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "FileController",
+        "importPath": "controllers.file_controller",
+        "description": "controllers.file_controller",
+        "isExtraImport": true,
+        "detail": "controllers.file_controller",
         "documentation": {}
     },
     {
@@ -2312,6 +2488,15 @@
         "description": "views.folder_view",
         "peekOfCode": "class FolderView(QWidget):\n    \"\"\"Vue détaillée d'un dossier\"\"\"\n    # Signaux\n    folder_selected = Signal(object)  # Émis quand un sous-dossier est sélectionné\n    file_selected = Signal(object)    # Émis quand un fichier est sélectionné\n    file_double_clicked = Signal(object)  # Émis lors d'un double-clic sur un fichier\n    def __init__(self, folder, file_controller, parent=None):\n        \"\"\"\n        Initialiser la vue du dossier\n        Args:",
         "detail": "views.folder_view",
+        "documentation": {}
+    },
+    {
+        "label": "FolderViewWindow",
+        "kind": 6,
+        "importPath": "views.folder_view_window",
+        "description": "views.folder_view_window",
+        "peekOfCode": "class FolderViewWindow(QDialog):\n    \"\"\"Fenêtre de visualisation détaillée d'un dossier\"\"\"\n    def __init__(self, folder, user, db: DatabaseManager, parent=None):\n        super().__init__(parent)\n        self.folder = folder\n        self.user = user\n        self.db = db\n        self.file_controller = FileController(user, db)\n        self.folder_controller = FolderController(user, db)\n        self.audit_controller = AuditController(user, db)",
+        "detail": "views.folder_view_window",
         "documentation": {}
     },
     {

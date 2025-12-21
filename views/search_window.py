@@ -140,15 +140,26 @@ class SearchWindow(QDialog):
             # Store folder object
             self.results_table.item(row, 0).setData(Qt.UserRole, folder)
     
-    def open_result(self, index):
-        """Open selected result"""
+    """def open_result(self, index):
+        \"""Open selected result\"""
         row = index.row()
         item = self.results_table.item(row, 0)
         result = item.data(Qt.UserRole)
         
         # TODO: Open folder or file preview
         print(f"Opening: {result.name}")
+        """
 
 
-
+    def open_result(self, index):
+        """Open selected result in folder view"""
+        row = index.row()
+        item = self.results_table.item(row, 0)
+        folder = item.data(Qt.UserRole)
+        
+        if folder:
+            # Ouvrir la fenêtre de visualisation du dossier
+            from views.folder_view_window import FolderViewWindow
+            folder_view = FolderViewWindow(folder, self.user, self.db, self)
+            folder_view.exec()
 
