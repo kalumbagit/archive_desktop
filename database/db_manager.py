@@ -10,6 +10,7 @@ class DatabaseManager:
     _instance = None
     _engine = None
     _session_factory = None
+    _db_type = None # <-- ajouté pour stocker le type de base de données
     
     def __new__(cls):
         if cls._instance is None:
@@ -17,6 +18,7 @@ class DatabaseManager:
         return cls._instance
     
     def initialize(self, db_type='sqlite', db_path=None, **kwargs):
+        self._db_type = db_type # <-- stocker le type
         """
         Initialize database connection
         
@@ -76,6 +78,10 @@ class DatabaseManager:
         if self._session_factory is None:
             raise RuntimeError("Database not initialized. Call initialize() first.")
         return self._session_factory()
+    
+    def get_db_type(self):
+        """Retourne le type de base de données (sqlite, postgresql, mysql)""" 
+        return self._db_type
     
     def close(self):
         """Close database connection"""

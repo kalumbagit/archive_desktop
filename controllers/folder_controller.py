@@ -142,22 +142,38 @@ class FolderController:
         session = self.db.get_session()
         try:
             filters = [Folder.owner_id == self.user.id]
-            
+
+            db_type = self.db.get_db_type()
+
             if query:
-                filters.append(or_(
-                    Folder.name.ilike(f'%{query}%'),
-                    Folder.description.ilike(f'%{query}%')
-                ))
-            
+                if db_type == "sqlite":
+                    # SQLite n'a pas ILIKE → utiliser LOWER + LIKE
+                    filters.append(or_(
+                        Folder.name.like(f'%{query}%'),
+                        Folder.description.like(f'%{query}%')
+                    ))
+                else:
+                    # PostgreSQL/MySQL → ILIKE disponible
+                    filters.append(or_(
+                        Folder.name.ilike(f'%{query}%'),
+                        Folder.description.ilike(f'%{query}%')
+                    ))
+
             if year:
                 filters.append(Folder.year == year)
-            
+
             if theme:
-                filters.append(Folder.theme.ilike(f'%{theme}%'))
-            
+                if db_type == "sqlite":
+                    filters.append(Folder.theme.like(f'%{theme}%'))
+                else:
+                    filters.append(Folder.theme.ilike(f'%{theme}%'))
+
             if sector:
-                filters.append(Folder.sector.ilike(f'%{sector}%'))
-            
+                if db_type == "sqlite":
+                    filters.append(Folder.sector.like(f'%{sector}%'))
+                else:
+                    filters.append(Folder.sector.ilike(f'%{sector}%'))
+
             folders = (
                 session.query(Folder)
                 .options(selectinload(Folder.subfolders))
@@ -169,7 +185,7 @@ class FolderController:
                 self._load_all_subfolders(folder, session)
 
             session.expunge_all()
-            print("voici le resultat de recherche dans le controller:",folders)
+            print("voici le resultat de recherche dans le controller:", folders)
             return folders
         finally:
             session.close()
