@@ -1,60 +1,54 @@
-
-"""
-
-
-# resources/styles/dark_theme.qss
-"""
 /* Thème sombre pour l'application */
 
 QMainWindow {
-    background-color: #1e1e1e;
+    background-color: @WINDOW_BG;
 }
 
 QWidget {
-    background-color: #2d2d2d;
-    color: #e0e0e0;
+    background-color: @MAIN_BG;
+    color: @TEXT_COLOR;
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 13px;
 }
 
 /* Menus */
 QMenuBar {
-    background-color: #252525;
-    border-bottom: 1px solid #3d3d3d;
+    background-color: @MENU_BG;
+    border-bottom: 1px solid @MENU_BORDER;
 }
 
 QMenuBar::item {
     padding: 5px 15px;
     background-color: transparent;
-    color: #e0e0e0;
+    color: @TEXT_COLOR;
 }
 
 QMenuBar::item:selected {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
 }
 
 QMenu {
-    background-color: #2d2d2d;
-    border: 1px solid #3d3d3d;
-    color: #e0e0e0;
+    background-color: @MAIN_BG;
+    border: 1px solid @MENU_BORDER;
+    color: @TEXT_COLOR;
 }
 
 QMenu::item:selected {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
 }
 
 /* Toolbar */
 QToolBar {
-    background-color: #252525;
+    background-color: @MENU_BG;
     border: none;
     spacing: 5px;
     padding: 5px;
 }
 
 QToolButton {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
     border: none;
     border-radius: 3px;
@@ -62,12 +56,12 @@ QToolButton {
 }
 
 QToolButton:hover {
-    background-color: #14a085;
+    background-color: @PRIMARY_HOVER;
 }
 
 /* Buttons */
 QPushButton {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
     border: none;
     border-radius: 5px;
@@ -76,160 +70,160 @@ QPushButton {
 }
 
 QPushButton:hover {
-    background-color: #14a085;
+    background-color: @PRIMARY_HOVER;
 }
 
 QPushButton:pressed {
-    background-color: #0a5a5d;
+    background-color: @PRIMARY_PRESSED;
 }
 
 QPushButton:disabled {
-    background-color: #3d3d3d;
-    color: #666666;
+    background-color: @DISABLED_BG;
+    color: @DISABLED_TEXT;
 }
 
 /* Input fields */
 QLineEdit, QTextEdit, QPlainTextEdit {
-    background-color: #3d3d3d;
-    border: 2px solid #4d4d4d;
+    background-color: @INPUT_BG;
+    border: 2px solid @INPUT_BORDER;
     border-radius: 5px;
     padding: 8px;
-    color: #e0e0e0;
+    color: @TEXT_COLOR;
 }
 
 QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
-    border: 2px solid #0d7377;
+    border: 2px solid @PRIMARY;
 }
 
 /* ComboBox */
 QComboBox {
-    background-color: #3d3d3d;
-    border: 2px solid #4d4d4d;
+    background-color: @INPUT_BG;
+    border: 2px solid @INPUT_BORDER;
     border-radius: 5px;
     padding: 5px 10px;
-    color: #e0e0e0;
+    color: @TEXT_COLOR;
 }
 
 QComboBox:hover {
-    border: 2px solid #0d7377;
+    border: 2px solid @PRIMARY;
 }
 
 /* Tree Widget */
 QTreeWidget {
-    background-color: #2d2d2d;
-    border: 1px solid #3d3d3d;
-    color: #e0e0e0;
+    background-color: @MAIN_BG;
+    border: 1px solid @MENU_BORDER;
+    color: @TEXT_COLOR;
 }
 
 QTreeWidget::item:selected {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
 }
 
 QTreeWidget::item:hover {
-    background-color: #3d3d3d;
+    background-color: @INPUT_BG;
 }
 
 /* List Widget */
 QListWidget {
-    background-color: #2d2d2d;
-    border: 1px solid #3d3d3d;
-    color: #e0e0e0;
+    background-color: @MAIN_BG;
+    border: 1px solid @MENU_BORDER;
+    color: @TEXT_COLOR;
 }
 
 QListWidget::item:selected {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
 }
 
 QListWidget::item:hover {
-    background-color: #3d3d3d;
+    background-color: @INPUT_BG;
 }
 
 /* Table Widget */
 QTableWidget {
-    background-color: #2d2d2d;
-    gridline-color: #3d3d3d;
-    border: 1px solid #3d3d3d;
-    color: #e0e0e0;
+    background-color: @MAIN_BG;
+    gridline-color: @MENU_BORDER;
+    border: 1px solid @MENU_BORDER;
+    color: @TEXT_COLOR;
 }
 
 QTableWidget::item:selected {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
 }
 
 QHeaderView::section {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
+    background-color: @HEADER_BG;
+    color: @HEADER_TEXT;
     padding: 8px;
-    border: 1px solid #3d3d3d;
+    border: 1px solid @MENU_BORDER;
     font-weight: bold;
 }
 
 /* Progress Bar */
 QProgressBar {
-    border: 2px solid #4d4d4d;
+    border: 2px solid @INPUT_BORDER;
     border-radius: 5px;
     text-align: center;
-    background-color: #3d3d3d;
-    color: #e0e0e0;
+    background-color: @INPUT_BG;
+    color: @TEXT_COLOR;
 }
 
 QProgressBar::chunk {
-    background-color: #0d7377;
+    background-color: @SUCCESS;
     border-radius: 3px;
 }
 
 /* Scrollbar */
 QScrollBar:vertical {
-    background-color: #2d2d2d;
+    background-color: @MAIN_BG;
     width: 12px;
 }
 
 QScrollBar::handle:vertical {
-    background-color: #4d4d4d;
+    background-color: @SCROLL_HANDLE;
     border-radius: 6px;
 }
 
 QScrollBar::handle:vertical:hover {
-    background-color: #5d5d5d;
+    background-color: @SCROLL_HANDLE_HOVER;
 }
 
 /* Status Bar */
 QStatusBar {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
+    background-color: @HEADER_BG;
+    color: @TEXT_COLOR;
 }
 
 /* Group Box */
 QGroupBox {
-    border: 2px solid #3d3d3d;
+    border: 2px solid @MENU_BORDER;
     border-radius: 5px;
     margin-top: 10px;
     padding-top: 10px;
-    color: #e0e0e0;
+    color: @TEXT_COLOR;
 }
 
 QGroupBox::title {
-    color: #0d7377;
+    color: @PRIMARY;
     font-weight: bold;
 }
 
 /* Tabs */
 QTabWidget::pane {
-    border: 1px solid #3d3d3d;
-    background-color: #2d2d2d;
+    border: 1px solid @MENU_BORDER;
+    background-color: @MAIN_BG;
 }
 
 QTabBar::tab {
-    background-color: #1e1e1e;
-    border: 1px solid #3d3d3d;
-    color: #e0e0e0;
+    background-color: @HEADER_BG;
+    border: 1px solid @MENU_BORDER;
+    color: @TEXT_COLOR;
     padding: 8px 20px;
 }
 
 QTabBar::tab:selected {
-    background-color: #0d7377;
+    background-color: @PRIMARY;
     color: white;
 }
