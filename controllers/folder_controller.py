@@ -185,7 +185,7 @@ class FolderController:
                 self._load_all_subfolders(folder, session)
 
             session.expunge_all()
-            print("voici le resultat de recherche dans le controller:", folders)
+            print("voici le resultat de filtre dans le controller:", filters)
             return folders
         finally:
             session.close()
