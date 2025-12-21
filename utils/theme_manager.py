@@ -44,6 +44,8 @@ class ThemeManager:
         if not stylesheet:
             stylesheet = ThemeManager._get_embedded_theme(theme_name)
 
+        print(stylesheet)
+
         try:
             app.setStyleSheet(stylesheet)
             return True
