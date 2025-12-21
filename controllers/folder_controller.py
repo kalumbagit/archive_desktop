@@ -4,6 +4,7 @@ from models.folder import Folder
 from controllers.audit_controller import AuditController
 from sqlalchemy import or_
 from sqlalchemy.orm import selectinload
+from sqlalchemy import func
 
 class FolderController:
     def __init__(self, user, db: DatabaseManager):
@@ -138,25 +139,22 @@ class FolderController:
             session.close()
     
     def search_folders(self, query=None, year=None, theme=None, sector=None):
-        """Search folders by criteria"""
         session = self.db.get_session()
         try:
             filters = [Folder.owner_id == self.user.id]
-
             db_type = self.db.get_db_type()
 
             if query:
                 if db_type == "sqlite":
-                    # SQLite n'a pas ILIKE → utiliser LOWER + LIKE
+                    from sqlalchemy import func
                     filters.append(or_(
-                        Folder.name.like(f'%{query}%'),
-                        Folder.description.like(f'%{query}%')
+                        func.lower(Folder.name).like(f"%{query.lower()}%"),
+                        func.lower(Folder.description).like(f"%{query.lower()}%")
                     ))
                 else:
-                    # PostgreSQL/MySQL → ILIKE disponible
                     filters.append(or_(
-                        Folder.name.ilike(f'%{query}%'),
-                        Folder.description.ilike(f'%{query}%')
+                        Folder.name.ilike(f"%{query}%"),
+                        Folder.description.ilike(f"%{query}%")
                     ))
 
             if year:
@@ -164,20 +162,20 @@ class FolderController:
 
             if theme:
                 if db_type == "sqlite":
-                    filters.append(Folder.theme.like(f'%{theme}%'))
+                    filters.append(func.lower(Folder.theme).like(f"%{theme.lower()}%"))
                 else:
-                    filters.append(Folder.theme.ilike(f'%{theme}%'))
+                    filters.append(Folder.theme.ilike(f"%{theme}%"))
 
             if sector:
                 if db_type == "sqlite":
-                    filters.append(Folder.sector.like(f'%{sector}%'))
+                    filters.append(func.lower(Folder.sector).like(f"%{sector.lower()}%"))
                 else:
-                    filters.append(Folder.sector.ilike(f'%{sector}%'))
+                    filters.append(Folder.sector.ilike(f"%{sector}%"))
 
             folders = (
                 session.query(Folder)
                 .options(selectinload(Folder.subfolders))
-                #.filter(*filters)
+                .filter(*filters)
                 .all()
             )
 
@@ -185,7 +183,8 @@ class FolderController:
                 self._load_all_subfolders(folder, session)
 
             session.expunge_all()
-            print("voici le resultat de filtre dans le controller:", filters)
+            print("voici la requête SQL générée:", str(session.query(Folder).filter(*filters)))
+            print("voici le resultat de recherche:", folders)
             return folders
         finally:
             session.close()
