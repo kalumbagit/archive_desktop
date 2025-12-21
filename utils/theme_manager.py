@@ -33,6 +33,7 @@ class ThemeManager:
                 stylesheet = theme_path.read_text(encoding="utf-8")
                 # Remplacer les variables
                 for key, value in colors.items():
+                    print(f"Remplacement de @{key} par {value} \n")
                     stylesheet = stylesheet.replace(f"@{key}", value)
             except Exception as e:
                 print(f"⚠️ Erreur lors de la lecture du fichier QSS: {e}")
