@@ -30,7 +30,7 @@ QMenuBar::item:selected {
 }
 
 QMenu {
-    background-color: #ffffff;
+    background-color: #3ec3f3ff;
     border: 1px solid #bdc3c7;
 }
 
@@ -89,7 +89,7 @@ QPushButton:disabled {
 
 /* Input fields */
 QLineEdit, QTextEdit, QPlainTextEdit {
-    background-color: #ffffff;
+    background-color: #3ec3f3ff;
     border: 2px solid #bdc3c7;
     border-radius: 5px;
     padding: 8px;
@@ -102,7 +102,7 @@ QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
 
 /* ComboBox */
 QComboBox {
-    background-color: #ffffff;
+    background-color: #3ec3f3ff;
     border: 2px solid #bdc3c7;
     border-radius: 5px;
     padding: 5px 10px;
@@ -125,7 +125,7 @@ QComboBox::down-arrow {
 
 /* Tree Widget */
 QTreeWidget {
-    background-color: #ffffff;
+    background-color: #3ec3f3ff;
     border: 1px solid #bdc3c7;
     border-radius: 5px;
 }
@@ -145,7 +145,7 @@ QTreeWidget::item:hover {
 
 /* List Widget */
 QListWidget {
-    background-color: #ffffff;
+    background-color: #3ec3f3ff;
     border: 1px solid #bdc3c7;
     border-radius: 5px;
 }
@@ -166,7 +166,7 @@ QListWidget::item:hover {
 
 /* Table Widget */
 QTableWidget {
-    background-color: #ffffff;
+    background-color: #3ec3f3ff;
     gridline-color: #ecf0f1;
     border: 1px solid #bdc3c7;
     border-radius: 5px;
@@ -257,7 +257,7 @@ QGroupBox::title {
 QTabWidget::pane {
     border: 1px solid #bdc3c7;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #3ec3f3ff;
 }
 
 QTabBar::tab {
