@@ -176,7 +176,7 @@
         "documentation": {}
     },
     {
-        "label": "DateTime",
+        "label": "Text",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -185,6 +185,14 @@
     },
     {
         "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -742,6 +750,14 @@
         "description": "datetime",
         "isExtraImport": true,
         "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "models.file",
+        "description": "models.file",
+        "isExtraImport": true,
+        "detail": "models.file",
         "documentation": {}
     },
     {
@@ -2475,7 +2491,7 @@
         "kind": 6,
         "importPath": "models.folder",
         "description": "models.folder",
-        "peekOfCode": "class Folder(Base):\n    __tablename__ = 'folders'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    year = Column(Integer, nullable=True)\n    theme = Column(String(100), nullable=True)\n    sector = Column(String(100), nullable=True)\n    description = Column(String(500))\n    parent_id = Column(Integer, ForeignKey('folders.id'), nullable=True)\n    owner_id = Column(Integer, ForeignKey('users.id'), nullable=False)",
+        "peekOfCode": "class Folder(Base):\n    __tablename__ = 'folders'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    year = Column(Integer, nullable=True)\n    theme = Column(String(100), nullable=True)\n    sector = Column(String(100), nullable=True)\n    description = Column(Text, nullable=True)\n    # Relations\n    parent_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=True)",
         "detail": "models.folder",
         "documentation": {}
     },
