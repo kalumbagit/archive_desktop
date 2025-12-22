@@ -3191,7 +3191,7 @@
         "kind": 6,
         "importPath": "views.settings_window",
         "description": "views.settings_window",
-        "peekOfCode": "class SettingsWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.settings = Settings()\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Paramètres\")\n        self.setGeometry(200, 200, 600, 500)\n        layout = QVBoxLayout()\n        tabs = QTabWidget()",
+        "peekOfCode": "class SettingsWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.settings = Settings()\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Paramètres\")\n        self.setGeometry(200, 200, 600, 500)\n        layout = QVBoxLayout()\n        # Tabs",
         "detail": "views.settings_window",
         "documentation": {}
     },
