@@ -48,7 +48,10 @@ class FolderController:
         try:
             folders = (
                 session.query(Folder)
-                .options(selectinload(Folder.subfolders))
+                .options(
+                    selectinload(Folder.subfolders),
+                    selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                    )
                 .filter(
                     Folder.parent_id.is_(None),
                     Folder.owner_id == self.user.id
