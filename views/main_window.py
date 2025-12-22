@@ -13,6 +13,7 @@ from controllers.audit_controller import AuditController
 from database.db_manager import DatabaseManager
 import os
 import shutil
+from utils.alert_dialog import AlertDialog
 
 class MainWindow(QMainWindow):
     """Fenêtre principale de l'application"""
@@ -289,7 +290,7 @@ class MainWindow(QMainWindow):
     def add_files_to_folder(self, folder):
         """Ajouter des fichiers à un dossier spécifique"""
         if folder is None:
-            QMessageBox.warning(self, "Attention", "Aucun dossier sélectionné")
+            AlertDialog.warning(self, "Attention", "Aucun dossier sélectionné")
             return
         
         # Ouvrir le sélecteur de fichiers
@@ -329,7 +330,7 @@ class MainWindow(QMainWindow):
         
         # Afficher le résultat
         if error_count == 0:
-            QMessageBox.information(
+            AlertDialog.information(
                 self,
                 "Succès",
                 f"{success_count} fichier(s) ajouté(s) avec succès au dossier '{folder.name}'"
@@ -340,12 +341,12 @@ class MainWindow(QMainWindow):
             if len(errors) > 5:
                 error_msg += f"\n... et {len(errors) - 5} autre(s) erreur(s)"
             
-            QMessageBox.warning(self, "Résultat partiel", error_msg)
+            AlertDialog.warning(self, "Résultat partiel", error_msg)
     
     def create_new_file(self, folder):
         """Créer un nouveau fichier dans un dossier"""
         if folder is None:
-            QMessageBox.warning(self, "Attention", "Aucun dossier sélectionné")
+            AlertDialog.warning(self, "Attention", "Aucun dossier sélectionné")
             return
         
         from views.file_creation_dialog import FileCreationDialog
@@ -388,13 +389,13 @@ class MainWindow(QMainWindow):
                     if self.current_folder and self.current_folder.id == folder.id:
                         self.load_files(folder)
                     
-                    QMessageBox.information(
+                    AlertDialog.information(
                         self,
                         "Succès",
                         f"Fichier '{file_name}' créé avec succès dans '{folder.name}'"
                     )
                 else:
-                    QMessageBox.critical(
+                    AlertDialog.error(
                         self,
                         "Erreur",
                         "Échec de l'ajout du fichier à la base de données"
@@ -404,7 +405,7 @@ class MainWindow(QMainWindow):
                         os.remove(file_path)
                         
             except Exception as e:
-                QMessageBox.critical(
+                AlertDialog.error(
                     self,
                     "Erreur",
                     f"Erreur lors de la création du fichier:\n{str(e)}"
@@ -413,7 +414,7 @@ class MainWindow(QMainWindow):
     def import_files(self):
         """Importer des fichiers dans le dossier sélectionné"""
         if self.current_folder is None:
-            QMessageBox.warning(self, "Attention", "Veuillez sélectionner un dossier d'abord")
+            AlertDialog.warning(self, "Attention", "Veuillez sélectionner un dossier d'abord")
             return
         
         self.add_files_to_folder(self.current_folder)
@@ -546,13 +547,13 @@ class MainWindow(QMainWindow):
             try:
                 shutil.copy2(file.file_path, save_path)
                 self.audit_controller.log_action('DOWNLOAD', 'FILE', file.id)
-                QMessageBox.information(
+                AlertDialog.information(
                     self,
                     "Succès",
                     f"Fichier téléchargé avec succès:\n{save_path}"
                 )
             except Exception as e:
-                QMessageBox.critical(
+                AlertDialog.error(
                     self,
                     "Erreur",
                     f"Erreur lors du téléchargement:\n{str(e)}"
@@ -560,43 +561,39 @@ class MainWindow(QMainWindow):
     
     def delete_file(self, file):
         """Supprimer un fichier"""
-        reply = QMessageBox.question(
+        reply = AlertDialog.question(
             self,
             'Confirmation',
             f'Êtes-vous sûr de vouloir supprimer le fichier:\n{file.name}?',
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No
         )
         
-        if reply == QMessageBox.Yes:
+        if reply == True:
             success, message = self.file_controller.delete_file(file.id)
             if success:
-                QMessageBox.information(self, "Succès", message)
+                AlertDialog.information(self, "Succès", message)
                 if self.current_folder:
                     self.load_files(self.current_folder)
             else:
-                QMessageBox.critical(self, "Erreur", message)
+                AlertDialog.error(self, "Erreur", message)
     
     def delete_folder(self, folder):
         """Supprimer un dossier"""
-        reply = QMessageBox.question(
+        reply = AlertDialog.question(
             self, 
             'Confirmation', 
             f'Êtes-vous sûr de vouloir supprimer le dossier:\n{folder.name}?\n\n'
-            'Tous les sous-dossiers et fichiers seront également supprimés.',
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No
+            'Tous les sous-dossiers et fichiers seront également supprimés.'
         )
         
-        if reply == QMessageBox.Yes:
+        if reply == True:
             success, message = self.folder_controller.delete_folder(folder.id)
             if success:
-                QMessageBox.information(self, "Succès", message)
+                AlertDialog.information(self, "Succès", message)
                 self.load_folders()
                 self.current_folder = None
                 self.file_list.clear()
             else:
-                QMessageBox.critical(self, "Erreur", message)
+                AlertDialog.error(self, "Erreur", message)
     
     def rename_folder(self, folder, item):
         """Renommer un dossier"""
@@ -615,10 +612,10 @@ class MainWindow(QMainWindow):
                 name=new_name
             )
             if success:
-                QMessageBox.information(self, "Succès", "Dossier renommé avec succès")
+                AlertDialog.information(self, "Succès", "Dossier renommé avec succès")
                 self.load_folders()
             else:
-                QMessageBox.critical(self, "Erreur", result)
+                AlertDialog.error(self, "Erreur", result)
     
     def show_folder_properties(self, folder):
         """Afficher les propriétés d'un dossier"""
@@ -641,7 +638,7 @@ class MainWindow(QMainWindow):
 <b>Description:</b> {folder.description or 'N/A'}<br>
 <b>Créé le:</b> {folder.created_at.strftime('%d/%m/%Y %H:%M') if folder.created_at else 'N/A'}
         """
-        QMessageBox.information(self, f"Propriétés: {folder.name}", info)
+        AlertDialog.information(self, f"Propriétés: {folder.name}", info)
     
     def share_folder_with_user(self, folder):
         """Partager un dossier avec un utilisateur"""
@@ -655,41 +652,37 @@ class MainWindow(QMainWindow):
         """Basculer entre public et privé"""
         if folder.is_public():
             # Rendre privé
-            reply = QMessageBox.question(
+            reply = AlertDialog.question(
                 self,
                 'Rendre privé',
                 f'Voulez-vous rendre le dossier "{folder.name}" privé?\n\n'
-                'Il ne sera plus visible par tous les utilisateurs.',
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No
+                'Il ne sera plus visible par tous les utilisateurs.'
             )
             
-            if reply == QMessageBox.Yes:
+            if reply == True:
                 success, message = self.sharing_controller.set_folder_public(folder.id, False)
                 if success:
-                    QMessageBox.information(self, "Succès", message)
+                    AlertDialog.information(self, "Succès", message)
                     self.load_folders()
                 else:
-                    QMessageBox.critical(self, "Erreur", message)
+                    AlertDialog.error(self, "Erreur", message)
         else:
             # Rendre public
-            reply = QMessageBox.question(
+            reply = AlertDialog.question(
                 self,
                 'Rendre public',
                 f'Voulez-vous rendre le dossier "{folder.name}" public?\n\n'
-                'Tous les utilisateurs pourront le voir et accéder à son contenu.',
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No
+                'Tous les utilisateurs pourront le voir et accéder à son contenu.'
             )
-            
-            if reply == QMessageBox.Yes:
+
+            if reply == True:
                 success, message = self.sharing_controller.set_folder_public(folder.id, True)
                 if success:
-                    QMessageBox.information(self, "Succès", message)
+                    AlertDialog.information(self, "Succès", message)
                     self.load_folders()
                 else:
-                    QMessageBox.critical(self, "Erreur", message)
-    
+                    AlertDialog.error(self, "Erreur", message)
+
     def manage_folder_shares(self, folder):
         """Gérer les partages d'un dossier"""
         from views.manage_shares_dialog import ManageSharesDialog
@@ -706,7 +699,7 @@ class MainWindow(QMainWindow):
 <b>Ajouté le:</b> {file.created_at.strftime('%d/%m/%Y %H:%M') if file.created_at else 'N/A'}<br>
 <b>Ajouté par:</b> {file.created_by}
         """
-        QMessageBox.information(self, f"Propriétés: {file.name}", info)
+        AlertDialog.information(self, f"Propriétés: {file.name}", info)
     
     def refresh_view(self):
         """Actualiser la vue"""
@@ -717,15 +710,13 @@ class MainWindow(QMainWindow):
     
     def logout(self):
         """Déconnexion et retour à l'écran de login"""
-        reply = QMessageBox.question(
+        reply = AlertDialog.question(
             self,
             'Déconnexion',
-            'Êtes-vous sûr de vouloir vous déconnecter?',
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No
+            'Êtes-vous sûr de vouloir vous déconnecter?'
         )
         
-        if reply == QMessageBox.Yes:
+        if reply == True:
             # Logger l'action de déconnexion
             self.audit_controller.log_action('LOGOUT', 'USER', self.user.id)
             
@@ -742,15 +733,13 @@ class MainWindow(QMainWindow):
         """Gérer la fermeture de la fenêtre"""
         if not self.should_logout:
             # L'utilisateur ferme l'application normalement (croix rouge)
-            reply = QMessageBox.question(
+            reply = AlertDialog.question(
                 self,
                 'Quitter',
-                'Êtes-vous sûr de vouloir quitter l\'application?',
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No
+                'Êtes-vous sûr de vouloir quitter l\'application?'
             )
-            
-            if reply == QMessageBox.Yes:
+
+            if reply == True:
                 # Logger la fermeture
                 self.audit_controller.log_action('LOGOUT', 'USER', self.user.id)
                 event.accept()
@@ -762,9 +751,4 @@ class MainWindow(QMainWindow):
     
     def show_about(self):
         """Afficher À propos"""
-        QMessageBox.about(
-            self, 
-            "À propos", 
-            "Gestionnaire d'Archives Numériques\nVersion 1.0\n\n"
-            "Application de gestion d'archives avec PySide6"
-        )
+        AlertDialog.about(self)

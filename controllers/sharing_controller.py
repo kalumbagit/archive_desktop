@@ -187,7 +187,10 @@ class SharingController:
         try:
             shares = (
                 session.query(FolderShare)
-                .options(selectinload(FolderShare.folder))
+                .options(
+                    selectinload(FolderShare.folder),
+                    selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                    )
                 .filter(FolderShare.user_id == self.user.id)
                 .all()
             )
@@ -242,7 +245,10 @@ class SharingController:
                 # Superuser voit tout
                 folders = (
                     session.query(Folder)
-                    .options(selectinload(Folder.subfolders))
+                    .options(
+                        selectinload(Folder.subfolders),
+                        selectinload(Folder.owner)
+                        )
                     .filter(Folder.parent_id.is_(None))
                     .all()
                 )
@@ -250,7 +256,10 @@ class SharingController:
                 # Dossiers personnels
                 my_folders = (
                     session.query(Folder)
-                    .options(selectinload(Folder.subfolders))
+                    .options(
+                        selectinload(Folder.subfolders),
+                        selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                    )
                     .filter(
                         Folder.owner_id == self.user.id,
                         Folder.parent_id.is_(None)
@@ -261,7 +270,10 @@ class SharingController:
                 # Dossiers publics des autres
                 public_folders = (
                     session.query(Folder)
-                    .options(selectinload(Folder.subfolders))
+                    .options(
+                        selectinload(Folder.subfolders),
+                        selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                    )
                     .filter(
                         Folder.visibility == FolderVisibility.PUBLIC,
                         Folder.owner_id != self.user.id,
@@ -280,7 +292,10 @@ class SharingController:
                 
                 shared_folders = (
                     session.query(Folder)
-                    .options(selectinload(Folder.subfolders))
+                    .options(
+                        selectinload(Folder.subfolders),
+                        selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                    )
                     .filter(
                         Folder.id.in_(shared_folder_ids),
                         Folder.parent_id.is_(None)

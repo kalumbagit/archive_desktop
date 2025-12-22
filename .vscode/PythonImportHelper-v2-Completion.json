@@ -2745,6 +2745,14 @@
         "documentation": {}
     },
     {
+        "label": "AlertDialog",
+        "importPath": "utils.alert_dialog",
+        "description": "utils.alert_dialog",
+        "isExtraImport": true,
+        "detail": "utils.alert_dialog",
+        "documentation": {}
+    },
+    {
         "label": "SharingController",
         "importPath": "controllers.sharing_controller",
         "description": "controllers.sharing_controller",
@@ -2994,7 +3002,7 @@
         "kind": 6,
         "importPath": "utils.alert_dialog",
         "description": "utils.alert_dialog",
-        "peekOfCode": "class AlertDialog:\n    \"\"\"\n    Classe utilitaire pour afficher des boîtes de dialogue uniformisées.\n    Toutes les méthodes sont statiques et permettent d'afficher différents\n    types d'alertes (information, warning, error, success, question).\n    Caractéristiques :\n    - Toujours centrées sur le parent qui les appelle.\n    - Taille large pour un rendu professionnel.\n    - Style et contenu uniformisés.\n    \"\"\"",
+        "peekOfCode": "class AlertDialog:\n    \"\"\"\n    Classe utilitaire pour afficher des boîtes de dialogue uniformisées.\n    Toutes les méthodes sont statiques et permettent d'afficher différents\n    types d'alertes (information, warning, error, success, question, about).\n    Caractéristiques :\n    - Toujours centrées sur le parent qui les appelle.\n    - Taille large pour un rendu professionnel.\n    - Style et contenu uniformisés.\n    \"\"\"",
         "detail": "utils.alert_dialog",
         "documentation": {}
     },

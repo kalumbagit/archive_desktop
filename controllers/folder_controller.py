@@ -79,7 +79,10 @@ class FolderController:
         try:
             folder = (
                 session.query(Folder)
-                .options(selectinload(Folder.subfolders))
+                .options(
+                    selectinload(Folder.subfolders),
+                    selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                    )
                 .filter(Folder.id == folder_id)
                 .first()
             )
@@ -96,7 +99,10 @@ class FolderController:
         try:
             folder = (
                 session.query(Folder)
-                .options(selectinload(Folder.subfolders))
+                .options(
+                    selectinload(Folder.subfolders),
+                    selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                )
                 .filter(Folder.id == folder_id)
                 .first()
             )
@@ -132,7 +138,8 @@ class FolderController:
                 session.query(Folder)
                 .options(
                     selectinload(Folder.subfolders),
-                    selectinload(Folder.files)
+                    selectinload(Folder.files),
+                    selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
                 )
                 .filter(Folder.id == folder_id)
                 .first()
@@ -235,7 +242,10 @@ class FolderController:
 
             folders = (
                 session.query(Folder)
-                .options(selectinload(Folder.subfolders))
+                .options(
+                    selectinload(Folder.subfolders),
+                    selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                )
                 .filter(*filters)
                 .all()
             )
