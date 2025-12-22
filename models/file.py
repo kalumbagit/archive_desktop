@@ -15,6 +15,7 @@ class File(Base):
     
     # Relations avec CASCADE
     folder_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=False)
+    created_by = Column(Integer, ForeignKey('users.id'), nullable=False)
     
     created_at = Column(DateTime, default=datetime.now(timezone.utc))
     updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))

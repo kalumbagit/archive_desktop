@@ -2490,7 +2490,7 @@
         "kind": 6,
         "importPath": "models.file",
         "description": "models.file",
-        "peekOfCode": "class File(Base):\n    __tablename__ = 'files'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    file_path = Column(String(500), nullable=False)\n    file_size = Column(BigInteger, nullable=True)\n    mime_type = Column(String(100), nullable=True)\n    # Relations avec CASCADE\n    folder_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=False)\n    created_at = Column(DateTime, default=datetime.now(timezone.utc))",
+        "peekOfCode": "class File(Base):\n    __tablename__ = 'files'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    file_path = Column(String(500), nullable=False)\n    file_size = Column(BigInteger, nullable=True)\n    mime_type = Column(String(100), nullable=True)\n    # Relations avec CASCADE\n    folder_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=False)\n    created_by = Column(Integer, ForeignKey('users.id'), nullable=False)",
         "detail": "models.file",
         "documentation": {}
     },
