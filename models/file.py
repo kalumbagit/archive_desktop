@@ -15,14 +15,18 @@ class File(Base):
     
     # Relations avec CASCADE
     folder_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=False)
-    created_by = Column(Integer, ForeignKey('users.id'), nullable=False)
     
     created_at = Column(DateTime, default=datetime.now(timezone.utc))
     updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))
     
     # Relationships
     folder = relationship("Folder", back_populates="files")
-    creator = relationship("User")
+    uploader = relationship('User')
+
+    file_type = Column(String(50))
+    uploaded_by = Column(Integer, ForeignKey('users.id'), nullable=False)
+    
+    
     
     def __repr__(self):
         return f"<File(id={self.id}, name='{self.name}', folder_id={self.folder_id})>"
