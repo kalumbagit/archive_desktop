@@ -4,6 +4,7 @@ from PySide6.QtWidgets import (QDialog, QVBoxLayout, QHBoxLayout, QLabel,
 from PySide6.QtCore import Qt
 from controllers.auth_controller import AuthController
 from database.db_manager import DatabaseManager
+from utils.alert_dialog import AlertDialog
 
 class LoginWindow(QDialog):
     def __init__(self, db: DatabaseManager):
@@ -93,7 +94,7 @@ class LoginWindow(QDialog):
         password = self.password_input.text()
         
         if not username or not password:
-            QMessageBox.warning(self, "Erreur", "Veuillez remplir tous les champs")
+            AlertDialog.warning(self, "Erreur", "Veuillez remplir tous les champs")
             return
         
         success, result = self.auth_controller.login(username, password)
@@ -102,7 +103,7 @@ class LoginWindow(QDialog):
             self.user = result
             self.accept()
         else:
-            QMessageBox.critical(self, "Erreur de connexion", result)
+            AlertDialog.error(self, "Erreur de connexion", result)
     
     def open_register(self):
         from views.register_window import RegisterWindow
@@ -114,7 +115,7 @@ class LoginWindow(QDialog):
         # La fenêtre de login reste visible en arrière-plan
         # Après la fermeture du dialogue d'inscription
         if result == QDialog.Accepted:
-            QMessageBox.information(
+            AlertDialog.information(
                 self, 
                 "Succès", 
                 "Compte créé avec succès! Vous pouvez maintenant vous connecter."

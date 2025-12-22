@@ -1,10 +1,11 @@
 # views/register_window.py
 from PySide6.QtWidgets import (QDialog, QVBoxLayout, QLabel, QLineEdit,
-                               QPushButton, QMessageBox)
+                               QPushButton)
 from PySide6.QtCore import Qt
 from controllers.auth_controller import AuthController
 import re
 from database.db_manager import DatabaseManager
+from utils.alert_dialog import AlertDialog
 
 class RegisterWindow(QDialog):
     def __init__(self, db: DatabaseManager):
@@ -116,25 +117,25 @@ class RegisterWindow(QDialog):
         
         # Validation
         if not username or not email or not password:
-            QMessageBox.warning(self, "Erreur", "Veuillez remplir tous les champs")
+            AlertDialog.warning(self, "Erreur", "Veuillez remplir tous les champs")
             return
         
         if len(username) < 3:
-            QMessageBox.warning(self, "Erreur", 
+            AlertDialog.warning(self, "Erreur", 
                               "Le nom d'utilisateur doit contenir au moins 3 caractères")
             return
         
         if not self.validate_email(email):
-            QMessageBox.warning(self, "Erreur", "Adresse email invalide")
+            AlertDialog.warning(self, "Erreur", "Adresse email invalide")
             return
         
         if len(password) < 6:
-            QMessageBox.warning(self, "Erreur", 
+            AlertDialog.warning(self, "Erreur", 
                               "Le mot de passe doit contenir au moins 6 caractères")
             return
         
         if password != confirm:
-            QMessageBox.warning(self, "Erreur", 
+            AlertDialog.warning(self, "Erreur", 
                               "Les mots de passe ne correspondent pas")
             return
         
@@ -145,4 +146,4 @@ class RegisterWindow(QDialog):
             # ✅ Utiliser accept() au lieu de close() pour indiquer le succès
             self.accept()
         else:
-            QMessageBox.critical(self, "Erreur d'inscription", message)
+            AlertDialog.error(self, "Erreur d'inscription", message)

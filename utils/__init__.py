@@ -9,6 +9,7 @@ from .scanner import FolderScanner
 from .preview_generator import PreviewGenerator
 from .validators import Validator
 from .enums import UserRole,FolderVisibility,SharePermission
+from .alert_dialog import AlertDialog
 
 __all__ = [
     'FileHandler',
@@ -17,5 +18,6 @@ __all__ = [
     'Validator',
     'UserRole',
     'FolderVisibility',
-    'SharePermission'
+    'SharePermission',
+    'AlertDialog'
 ]
