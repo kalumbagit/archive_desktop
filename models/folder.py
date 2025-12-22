@@ -2,6 +2,7 @@
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from datetime import datetime
+from datetime import timezone
 from database.db_manager import Base
 
 class Folder(Base):
@@ -18,8 +19,8 @@ class Folder(Base):
     parent_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=True)
     owner_id = Column(Integer, ForeignKey('users.id'), nullable=False)
     
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, ondelete=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now(timezone.utc))
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))
     
     # Relationships avec cascade
     owner = relationship("User", back_populates="folders")

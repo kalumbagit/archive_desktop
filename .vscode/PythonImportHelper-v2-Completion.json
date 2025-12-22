@@ -128,7 +128,7 @@
         "documentation": {}
     },
     {
-        "label": "DateTime",
+        "label": "BigInteger",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -144,7 +144,7 @@
         "documentation": {}
     },
     {
-        "label": "BigInteger",
+        "label": "DateTime",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -729,7 +729,23 @@
         "documentation": {}
     },
     {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -2482,7 +2498,7 @@
         "kind": 6,
         "importPath": "models.file",
         "description": "models.file",
-        "peekOfCode": "class File(Base):\n    __tablename__ = 'files'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    file_path = Column(String(500), nullable=False)\n    file_type = Column(String(50))\n    file_size = Column(BigInteger)\n    mime_type = Column(String(100))\n    folder_id = Column(Integer, ForeignKey('folders.id'), nullable=False)\n    uploaded_by = Column(Integer, ForeignKey('users.id'), nullable=False)",
+        "peekOfCode": "class File(Base):\n    __tablename__ = 'files'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    file_path = Column(String(500), nullable=False)\n    file_size = Column(BigInteger, nullable=True)\n    mime_type = Column(String(100), nullable=True)\n    # Relations avec CASCADE\n    folder_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=False)\n    created_by = Column(Integer, ForeignKey('users.id'), nullable=False)",
         "detail": "models.file",
         "documentation": {}
     },
