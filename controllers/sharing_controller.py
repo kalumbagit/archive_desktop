@@ -189,7 +189,7 @@ class SharingController:
                 session.query(FolderShare)
                 .options(
                     selectinload(FolderShare.folder),
-                    selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
+                    selectinload(FolderShare.folder).selectinload(Folder.owner) # ✅ Charger l'utilisateur lié
                     )
                 .filter(FolderShare.user_id == self.user.id)
                 .all()
