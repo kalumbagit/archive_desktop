@@ -52,8 +52,8 @@ QMessageBox QLabel {
 }
 
 QMessageBox QPushButton {
-    min-width: 120px;
-    min-height: 45px;
+    min-width: 100px;
+    min-height: 35px;
     font-weight: bold;
     background-color: @PRIMARY;
     color: white;
