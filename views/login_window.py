@@ -47,16 +47,22 @@ class LoginWindow(QDialog):
         self.password_input.returnPressed.connect(self.login)
         layout.addWidget(self.password_input)
         
-        layout.addSpacing(10)
+        layout.addSpacing(20)
         
-        # Login button
+        # ------------------------------
+        # Boutons sur la même ligne
+        # ------------------------------
+        button_layout = QHBoxLayout()
+        button_layout.setSpacing(15)
+        button_layout.setAlignment(Qt.AlignCenter)
+        
         self.login_btn = QPushButton("Se connecter")
         self.login_btn.setStyleSheet("""
             QPushButton {
                 background-color: #3498db;
                 color: white;
                 border: none;
-                padding: 10px;
+                padding: 10px 20px;
                 border-radius: 5px;
                 font-size: 14px;
             }
@@ -65,16 +71,15 @@ class LoginWindow(QDialog):
             }
         """)
         self.login_btn.clicked.connect(self.login)
-        layout.addWidget(self.login_btn)
+        button_layout.addWidget(self.login_btn)
         
-        # Register button
         self.register_btn = QPushButton("Créer un compte")
         self.register_btn.setStyleSheet("""
             QPushButton {
                 background-color: #2ecc71;
                 color: white;
                 border: none;
-                padding: 10px;
+                padding: 10px 20px;
                 border-radius: 5px;
                 font-size: 14px;
             }
@@ -83,12 +88,13 @@ class LoginWindow(QDialog):
             }
         """)
         self.register_btn.clicked.connect(self.open_register)
-        layout.addWidget(self.register_btn)
+        button_layout.addWidget(self.register_btn)
         
+        layout.addLayout(button_layout)
         layout.addStretch()
         
         self.setLayout(layout)
-    
+
     def login(self):
         username = self.username_input.text().strip()
         password = self.password_input.text()

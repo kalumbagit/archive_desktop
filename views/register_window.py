@@ -1,5 +1,5 @@
 # views/register_window.py
-from PySide6.QtWidgets import (QDialog, QVBoxLayout, QLabel, QLineEdit,
+from PySide6.QtWidgets import (QDialog, QVBoxLayout, QLabel, QLineEdit,QHBoxLayout,
                                QPushButton)
 from PySide6.QtCore import Qt
 from controllers.auth_controller import AuthController
@@ -62,16 +62,22 @@ class RegisterWindow(QDialog):
         self.confirm_input.setEchoMode(QLineEdit.Password)
         layout.addWidget(self.confirm_input)
         
-        layout.addSpacing(10)
+        layout.addSpacing(20)
         
-        # Register button
+        # ------------------------------
+        # Boutons sur la même ligne
+        # ------------------------------
+        button_layout = QHBoxLayout()
+        button_layout.setSpacing(15)
+        button_layout.setAlignment(Qt.AlignCenter)
+        
         self.register_btn = QPushButton("S'inscrire")
         self.register_btn.setStyleSheet("""
             QPushButton {
                 background-color: #2ecc71;
                 color: white;
                 border: none;
-                padding: 10px;
+                padding: 10px 20px;
                 border-radius: 5px;
                 font-size: 14px;
             }
@@ -80,16 +86,15 @@ class RegisterWindow(QDialog):
             }
         """)
         self.register_btn.clicked.connect(self.register)
-        layout.addWidget(self.register_btn)
+        button_layout.addWidget(self.register_btn)
         
-        # Cancel button
         self.cancel_btn = QPushButton("Annuler")
         self.cancel_btn.setStyleSheet("""
             QPushButton {
                 background-color: #95a5a6;
                 color: white;
                 border: none;
-                padding: 10px;
+                padding: 10px 20px;
                 border-radius: 5px;
                 font-size: 14px;
             }
@@ -98,11 +103,13 @@ class RegisterWindow(QDialog):
             }
         """)
         self.cancel_btn.clicked.connect(self.reject)
-        layout.addWidget(self.cancel_btn)
+        button_layout.addWidget(self.cancel_btn)
         
+        layout.addLayout(button_layout)
         layout.addStretch()
         
         self.setLayout(layout)
+
     
     def validate_email(self, email):
         """Validate email format"""
