@@ -200,6 +200,62 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Column",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -233,6 +289,14 @@
     },
     {
         "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
         "isExtraImport": true,
@@ -505,6 +569,22 @@
         "documentation": {}
     },
     {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "database.db_manager",
         "description": "database.db_manager",
@@ -654,6 +734,30 @@
         "description": "models.user",
         "isExtraImport": true,
         "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
         "documentation": {}
     },
     {
@@ -745,7 +849,39 @@
         "documentation": {}
     },
     {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -876,6 +1012,30 @@
         "documentation": {}
     },
     {
+        "label": "FolderVisibility",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "selectinload",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
         "label": "selectinload",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -932,6 +1092,70 @@
         "documentation": {}
     },
     {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "FolderShare",
+        "importPath": "models.folder_share",
+        "description": "models.folder_share",
+        "isExtraImport": true,
+        "detail": "models.folder_share",
+        "documentation": {}
+    },
+    {
+        "label": "SharePermission",
+        "importPath": "models.folder_share",
+        "description": "models.folder_share",
+        "isExtraImport": true,
+        "detail": "models.folder_share",
+        "documentation": {}
+    },
+    {
+        "label": "SharePermission",
+        "importPath": "models.folder_share",
+        "description": "models.folder_share",
+        "isExtraImport": true,
+        "detail": "models.folder_share",
+        "documentation": {}
+    },
+    {
+        "label": "FolderVisibility",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SharePermission",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FolderVisibility",
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "isExtraImport": true,
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
         "label": "generate_password_hash",
         "importPath": "werkzeug.security",
         "description": "werkzeug.security",
@@ -963,6 +1187,15 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "enum",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "enum",
+        "description": "enum",
+        "detail": "enum",
         "documentation": {}
     },
     {
@@ -1735,6 +1968,78 @@
         "documentation": {}
     },
     {
+        "label": "QTableWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTableWidgetItem",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHeaderView",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QTextEdit",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -2031,6 +2336,70 @@
         "documentation": {}
     },
     {
+        "label": "QDialog",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QComboBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMessageBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QGroupBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QApplication",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -2137,6 +2506,22 @@
     },
     {
         "label": "Signal",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -2320,6 +2705,22 @@
         "documentation": {}
     },
     {
+        "label": "SharingController",
+        "importPath": "controllers.sharing_controller",
+        "description": "controllers.sharing_controller",
+        "isExtraImport": true,
+        "detail": "controllers.sharing_controller",
+        "documentation": {}
+    },
+    {
+        "label": "SharingController",
+        "importPath": "controllers.sharing_controller",
+        "description": "controllers.sharing_controller",
+        "isExtraImport": true,
+        "detail": "controllers.sharing_controller",
+        "documentation": {}
+    },
+    {
         "label": "PreviewGenerator",
         "importPath": "utils.preview_generator",
         "description": "utils.preview_generator",
@@ -2450,6 +2851,15 @@
         "documentation": {}
     },
     {
+        "label": "SharingController",
+        "kind": 6,
+        "importPath": "controllers.sharing_controller",
+        "description": "controllers.sharing_controller",
+        "peekOfCode": "class SharingController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n        self.audit = AuditController(user, db)\n    def share_folder(self, folder_id, user_id, permission=SharePermission.READ):\n        \"\"\"Partager un dossier avec un utilisateur\"\"\"\n        session = self.db.get_session()\n        try:\n            # Vérifier que le dossier existe et appartient à l'utilisateur",
+        "detail": "controllers.sharing_controller",
+        "documentation": {}
+    },
+    {
         "label": "DatabaseManager",
         "kind": 6,
         "importPath": "database.db_manager",
@@ -2499,8 +2909,17 @@
         "kind": 6,
         "importPath": "models.folder",
         "description": "models.folder",
-        "peekOfCode": "class Folder(Base):\n    __tablename__ = 'folders'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    year = Column(Integer, nullable=True)\n    theme = Column(String(100), nullable=True)\n    sector = Column(String(100), nullable=True)\n    description = Column(Text, nullable=True)\n    # Relations\n    parent_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=True)",
+        "peekOfCode": "class Folder(Base):\n    __tablename__ = 'folders'\n    id = Column(Integer, primary_key=True)\n    name = Column(String(255), nullable=False)\n    year = Column(Integer, nullable=True)\n    theme = Column(String(100), nullable=True)\n    sector = Column(String(100), nullable=True)\n    description = Column(Text, nullable=True)\n    # Visibilité du dossier\n    visibility = Column(SQLEnum(FolderVisibility), ",
         "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "FolderShare",
+        "kind": 6,
+        "importPath": "models.folder_share",
+        "description": "models.folder_share",
+        "peekOfCode": "class FolderShare(Base):\n    __tablename__ = 'folder_shares'\n    id = Column(Integer, primary_key=True)\n    # Relations\n    folder_id = Column(Integer, ForeignKey('folders.id', ondelete='CASCADE'), nullable=False)\n    user_id = Column(Integer, ForeignKey('users.id', ondelete='CASCADE'), nullable=False)\n    # Permission accordée\n    permission = Column(SQLEnum(SharePermission), \n                       default=SharePermission.READ, \n                       nullable=False)",
+        "detail": "models.folder_share",
         "documentation": {}
     },
     {
@@ -2508,7 +2927,7 @@
         "kind": 6,
         "importPath": "models.user",
         "description": "models.user",
-        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True)\n    username = Column(String(50), unique=True, nullable=False)\n    email = Column(String(100), unique=True, nullable=False)\n    password_hash = Column(String(255), nullable=False)\n    role = Column(String(20), default='user')  # user, admin\n    created_at = Column(DateTime, default=datetime.utcnow)\n    last_login = Column(DateTime)\n    is_active = Column(Boolean, default=True)",
+        "peekOfCode": "class User(Base):\n    __tablename__ = 'users'\n    id = Column(Integer, primary_key=True)\n    username = Column(String(100), unique=True, nullable=False)\n    email = Column(String(255), unique=True, nullable=False)\n    password_hash = Column(String(255), nullable=False)\n    # Rôle de l'utilisateur\n    role = Column(SQLEnum(UserRole), default=UserRole.USER, nullable=False)\n    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))\n    updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), ",
         "detail": "models.user",
         "documentation": {}
     },
@@ -2528,6 +2947,33 @@
         "description": "ressources.styles.colors",
         "peekOfCode": "DARK_COLORS = {\n    'MAIN_BG': '#2d2d2d',\n    'WINDOW_BG': '#1e1e1e',\n    'TEXT_COLOR': '#e0e0e0',\n    'MENU_BG': '#252525',\n    'MENU_BORDER': '#3d3d3d',\n    'PRIMARY_HOVER': '#14a085',\n    'PRIMARY_PRESSED': '#0a5a5d',\n    'PRIMARY': '#0d7377',\n    'DISABLED_BG': '#3d3d3d',",
         "detail": "ressources.styles.colors",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "kind": 6,
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "peekOfCode": "class UserRole(enum.Enum):\n    \"\"\"Rôles des utilisateurs\"\"\"\n    USER = \"user\"           # Utilisateur normal\n    ADMIN = \"admin\"         # Administrateur\n    SUPERUSER = \"superuser\" # Super utilisateur (accès total)\nclass FolderVisibility(enum.Enum):\n    \"\"\"Visibilité des dossiers\"\"\"\n    PRIVATE = \"private\"   # Visible uniquement par le propriétaire\n    SHARED = \"shared\"     # Partagé avec certains utilisateurs\n    PUBLIC = \"public\"     # Accessible à tous les utilisateurs",
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "FolderVisibility",
+        "kind": 6,
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "peekOfCode": "class FolderVisibility(enum.Enum):\n    \"\"\"Visibilité des dossiers\"\"\"\n    PRIVATE = \"private\"   # Visible uniquement par le propriétaire\n    SHARED = \"shared\"     # Partagé avec certains utilisateurs\n    PUBLIC = \"public\"     # Accessible à tous les utilisateurs\nclass SharePermission(enum.Enum):\n    \"\"\"Permissions de partage\"\"\"\n    READ = \"read\"           # Lecture seule\n    WRITE = \"write\"         # Lecture et écriture (ajouter des fichiers)\n    MANAGE = \"manage\"       # Gestion complète (renommer, supprimer)",
+        "detail": "utils.enums",
+        "documentation": {}
+    },
+    {
+        "label": "SharePermission",
+        "kind": 6,
+        "importPath": "utils.enums",
+        "description": "utils.enums",
+        "peekOfCode": "class SharePermission(enum.Enum):\n    \"\"\"Permissions de partage\"\"\"\n    READ = \"read\"           # Lecture seule\n    WRITE = \"write\"         # Lecture et écriture (ajouter des fichiers)\n    MANAGE = \"manage\"       # Gestion complète (renommer, supprimer)",
+        "detail": "utils.enums",
         "documentation": {}
     },
     {
@@ -2648,6 +3094,15 @@
         "documentation": {}
     },
     {
+        "label": "ManageSharesDialog",
+        "kind": 6,
+        "importPath": "views.manage_shares_dialog",
+        "description": "views.manage_shares_dialog",
+        "peekOfCode": "class ManageSharesDialog(QDialog):\n    \"\"\"Dialogue pour gérer les partages d'un dossier\"\"\"\n    def __init__(self, folder, current_user, db, parent=None):\n        super().__init__(parent)\n        self.folder = folder\n        self.current_user = current_user\n        self.db = db\n        self.sharing_controller = SharingController(current_user, db)\n        self.init_ui()\n        self.load_shares()",
+        "detail": "views.manage_shares_dialog",
+        "documentation": {}
+    },
+    {
         "label": "PreviewWindow",
         "kind": 6,
         "importPath": "views.preview_window",
@@ -2681,6 +3136,15 @@
         "description": "views.settings_window",
         "peekOfCode": "class SettingsWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.settings = Settings()\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Paramètres\")\n        self.setGeometry(200, 200, 600, 500)\n        layout = QVBoxLayout()\n        # Tabs",
         "detail": "views.settings_window",
+        "documentation": {}
+    },
+    {
+        "label": "ShareDialog",
+        "kind": 6,
+        "importPath": "views.share_dialog",
+        "description": "views.share_dialog",
+        "peekOfCode": "class ShareDialog(QDialog):\n    \"\"\"Dialogue pour partager un dossier avec un utilisateur\"\"\"\n    def __init__(self, folder, current_user, db, parent=None):\n        super().__init__(parent)\n        self.folder = folder\n        self.current_user = current_user\n        self.db = db\n        self.sharing_controller = SharingController(current_user, db)\n        self.init_ui()\n        self.load_users()",
+        "detail": "views.share_dialog",
         "documentation": {}
     },
     {

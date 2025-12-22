@@ -29,6 +29,13 @@ class MainWindow(QMainWindow):
         self.file_controller = FileController(user, self.db)
         self.audit_controller = AuditController(user, self.db)
         
+        # Import du sharing controller
+        from controllers.sharing_controller import SharingController
+        self.sharing_controller = SharingController(user, self.db)
+        
+        # Mode d'affichage actuel
+        self.current_view_mode = "my_folders"  # my_folders, public, shared
+        
         self.init_ui()
         self.load_folders()
     
@@ -137,6 +144,20 @@ class MainWindow(QMainWindow):
         # View menu
         view_menu = menubar.addMenu("Affichage")
         
+        my_folders_action = QAction("📁 Mes dossiers", self)
+        my_folders_action.triggered.connect(self.show_my_folders)
+        view_menu.addAction(my_folders_action)
+        
+        public_folders_action = QAction("🌍 Dossiers publics", self)
+        public_folders_action.triggered.connect(self.show_public_folders)
+        view_menu.addAction(public_folders_action)
+        
+        shared_folders_action = QAction("👥 Dossiers partagés avec moi", self)
+        shared_folders_action.triggered.connect(self.show_shared_folders)
+        view_menu.addAction(shared_folders_action)
+        
+        view_menu.addSeparator()
+        
         refresh_action = QAction("Actualiser", self)
         refresh_action.triggered.connect(self.refresh_view)
         view_menu.addAction(refresh_action)
@@ -175,12 +196,38 @@ class MainWindow(QMainWindow):
         return top_bar
     
     def load_folders(self):
-        """Charger les dossiers racine"""
+        """Charger les dossiers selon le mode d'affichage"""
         self.folder_tree.clear()
-        folders = self.folder_controller.get_root_folders()
+        
+        if self.current_view_mode == "my_folders":
+            folders = self.folder_controller.get_root_folders()
+        elif self.current_view_mode == "public":
+            folders = self.sharing_controller.get_public_folders()
+        elif self.current_view_mode == "shared":
+            folders = self.sharing_controller.get_shared_with_me()
+        else:
+            folders = []
         
         for folder in folders:
             self.add_folder_to_tree(folder, None)
+    
+    def show_my_folders(self):
+        """Afficher mes dossiers"""
+        self.current_view_mode = "my_folders"
+        self.load_folders()
+        self.statusBar().showMessage("Affichage: Mes dossiers")
+    
+    def show_public_folders(self):
+        """Afficher les dossiers publics"""
+        self.current_view_mode = "public"
+        self.load_folders()
+        self.statusBar().showMessage("Affichage: Dossiers publics")
+    
+    def show_shared_folders(self):
+        """Afficher les dossiers partagés avec moi"""
+        self.current_view_mode = "shared"
+        self.load_folders()
+        self.statusBar().showMessage("Affichage: Dossiers partagés avec moi")
     
     def add_folder_to_tree(self, folder, parent_item):
         """Ajouter un dossier à l'arborescence de manière récursive"""
@@ -410,15 +457,32 @@ class MainWindow(QMainWindow):
         
         menu = QMenu()
         
-        # Créer et ajouter des fichiers
+        # Options de base
         create_file_action = menu.addAction("📄 Créer un fichier")
         add_files_action = menu.addAction("📎 Ajouter des fichiers existants")
         menu.addSeparator()
         
-        # Autres actions
-        rename_action = menu.addAction("✏️ Renommer")
-        delete_action = menu.addAction("🗑️ Supprimer")
-        menu.addSeparator()
+        # Options de partage (uniquement pour le propriétaire ou superuser)
+        if folder.owner_id == self.user.id or self.user.is_superuser():
+            share_menu = menu.addMenu("🔗 Partage")
+            
+            share_user_action = share_menu.addAction("👤 Partager avec un utilisateur")
+            
+            if folder.is_public():
+                make_private_action = share_menu.addAction("🔒 Rendre privé")
+            else:
+                make_public_action = share_menu.addAction("🌍 Rendre public")
+            
+            manage_shares_action = share_menu.addAction("⚙️ Gérer les partages")
+            
+            menu.addSeparator()
+        
+        # Autres actions (uniquement pour le propriétaire)
+        if folder.owner_id == self.user.id or self.user.is_superuser():
+            rename_action = menu.addAction("✏️ Renommer")
+            delete_action = menu.addAction("🗑️ Supprimer")
+            menu.addSeparator()
+        
         properties_action = menu.addAction("ℹ️ Propriétés")
         
         action = menu.exec_(self.folder_tree.mapToGlobal(position))
@@ -427,11 +491,18 @@ class MainWindow(QMainWindow):
             self.create_new_file(folder)
         elif action == add_files_action:
             self.add_files_to_folder(folder)
-        elif action == delete_action:
-            self.delete_folder(folder)
-        elif action == rename_action:
-            self.rename_folder(folder, item)
-        elif action == properties_action:
+        elif folder.owner_id == self.user.id or self.user.is_superuser():
+            if action == share_user_action:
+                self.share_folder_with_user(folder)
+            elif action == make_public_action if not folder.is_public() else action == make_private_action:
+                self.toggle_folder_public(folder)
+            elif action == manage_shares_action:
+                self.manage_folder_shares(folder)
+            elif action == delete_action:
+                self.delete_folder(folder)
+            elif action == rename_action:
+                self.rename_folder(folder, item)
+        if action == properties_action:
             self.show_folder_properties(folder)
     
     def show_file_context_menu(self, position):
@@ -551,8 +622,19 @@ class MainWindow(QMainWindow):
     
     def show_folder_properties(self, folder):
         """Afficher les propriétés d'un dossier"""
+        # Afficher le badge de visibilité
+        visibility_badges = {
+            'private': '🔒 Privé',
+            'shared': '👥 Partagé',
+            'public': '🌍 Public'
+        }
+        
+        visibility = visibility_badges.get(folder.visibility.value, folder.visibility.value)
+        owner_info = f" (Propriétaire: {folder.owner.username})" if hasattr(folder, 'owner') else ""
+        
         info = f"""
 <b>Nom:</b> {folder.name}<br>
+<b>Visibilité:</b> {visibility}{owner_info}<br>
 <b>Année:</b> {folder.year or 'N/A'}<br>
 <b>Thème:</b> {folder.theme or 'N/A'}<br>
 <b>Secteur:</b> {folder.sector or 'N/A'}<br>
@@ -560,6 +642,60 @@ class MainWindow(QMainWindow):
 <b>Créé le:</b> {folder.created_at.strftime('%d/%m/%Y %H:%M') if folder.created_at else 'N/A'}
         """
         QMessageBox.information(self, f"Propriétés: {folder.name}", info)
+    
+    def share_folder_with_user(self, folder):
+        """Partager un dossier avec un utilisateur"""
+        from views.share_dialog import ShareDialog
+        
+        dialog = ShareDialog(folder, self.user, self.db, self)
+        if dialog.exec():
+            self.statusBar().showMessage(f"Dossier '{folder.name}' partagé")
+    
+    def toggle_folder_public(self, folder):
+        """Basculer entre public et privé"""
+        if folder.is_public():
+            # Rendre privé
+            reply = QMessageBox.question(
+                self,
+                'Rendre privé',
+                f'Voulez-vous rendre le dossier "{folder.name}" privé?\n\n'
+                'Il ne sera plus visible par tous les utilisateurs.',
+                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.No
+            )
+            
+            if reply == QMessageBox.Yes:
+                success, message = self.sharing_controller.set_folder_public(folder.id, False)
+                if success:
+                    QMessageBox.information(self, "Succès", message)
+                    self.load_folders()
+                else:
+                    QMessageBox.critical(self, "Erreur", message)
+        else:
+            # Rendre public
+            reply = QMessageBox.question(
+                self,
+                'Rendre public',
+                f'Voulez-vous rendre le dossier "{folder.name}" public?\n\n'
+                'Tous les utilisateurs pourront le voir et accéder à son contenu.',
+                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.No
+            )
+            
+            if reply == QMessageBox.Yes:
+                success, message = self.sharing_controller.set_folder_public(folder.id, True)
+                if success:
+                    QMessageBox.information(self, "Succès", message)
+                    self.load_folders()
+                else:
+                    QMessageBox.critical(self, "Erreur", message)
+    
+    def manage_folder_shares(self, folder):
+        """Gérer les partages d'un dossier"""
+        from views.manage_shares_dialog import ManageSharesDialog
+        
+        dialog = ManageSharesDialog(folder, self.user, self.db, self)
+        dialog.exec()
     
     def show_file_properties(self, file):
         """Afficher les propriétés d'un fichier"""
