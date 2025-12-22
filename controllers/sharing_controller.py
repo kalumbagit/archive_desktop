@@ -12,6 +12,14 @@ class SharingController:
         self.db = db
         self.audit = AuditController(user, db)
     
+    # ------------------------------
+    # Méthodes utilitaires
+    # ------------------------------
+    def _load_all_subfolders(self, folder, session):
+        """Forcer le chargement récursif de tous les sous-dossiers"""
+        for sub in folder.subfolders:
+            self._load_all_subfolders(sub, session)
+
     def share_folder(self, folder_id, user_id, permission=SharePermission.READ):
         """Partager un dossier avec un utilisateur"""
         session = self.db.get_session()
@@ -165,6 +173,8 @@ class SharingController:
                 .all()
             )
             
+            for folder in folders:
+                self._load_all_subfolders(folder, session)
             session.expunge_all()
             return folders
             
@@ -183,6 +193,8 @@ class SharingController:
             )
             
             folders = [share.folder for share in shares]
+            for folder in folders:
+                self._load_all_subfolders(folder, session)
             session.expunge_all()
             
             return folders
@@ -207,7 +219,9 @@ class SharingController:
                 .filter(FolderShare.folder_id == folder_id)
                 .all()
             )
-            
+
+            # Charger récursivement les sous-dossiers du dossier partagé
+            self._load_all_subfolders(folder, session)
             session.expunge_all()
             return shares
             
@@ -275,7 +289,8 @@ class SharingController:
                 ) if shared_folder_ids else []
                 
                 folders = my_folders + public_folders + shared_folders
-            
+            for folder in folders:
+                self._load_all_subfolders(folder, session)
             session.expunge_all()
             return folders
             

@@ -2855,7 +2855,7 @@
         "kind": 6,
         "importPath": "controllers.sharing_controller",
         "description": "controllers.sharing_controller",
-        "peekOfCode": "class SharingController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n        self.audit = AuditController(user, db)\n    def share_folder(self, folder_id, user_id, permission=SharePermission.READ):\n        \"\"\"Partager un dossier avec un utilisateur\"\"\"\n        session = self.db.get_session()\n        try:\n            # Vérifier que le dossier existe et appartient à l'utilisateur",
+        "peekOfCode": "class SharingController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n        self.audit = AuditController(user, db)\n    # ------------------------------\n    # Méthodes utilitaires\n    # ------------------------------\n    def _load_all_subfolders(self, folder, session):\n        \"\"\"Forcer le chargement récursif de tous les sous-dossiers\"\"\"",
         "detail": "controllers.sharing_controller",
         "documentation": {}
     },
