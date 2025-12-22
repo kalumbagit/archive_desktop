@@ -32,6 +32,35 @@ QMenu::item:selected {
     color: white;
 }
 
+/* Alertes uniformisées */
+QMessageBox {
+    font-size: 14px;
+    min-width: 600px;
+    min-height: 250px;
+}
+
+QMessageBox QLabel {
+    font-size: 14px;
+    color: @TEXT_COLOR;
+}
+
+QMessageBox QPushButton {
+    min-width: 100px;
+    min-height: 35px;
+    font-weight: bold;
+    background-color: @PRIMARY;
+    color: white;
+    border-radius: 5px;
+}
+
+QMessageBox QPushButton:hover {
+    background-color: @PRIMARY_HOVER;
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: @PRIMARY_PRESSED;
+}
+
 /* Toolbar */
 QToolBar {
     background-color: @MENU_BG;
