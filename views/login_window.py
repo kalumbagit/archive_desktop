@@ -16,7 +16,7 @@ class LoginWindow(QDialog):
 
     def init_ui(self):
         self.setWindowTitle("Connexion - Gestionnaire d'Archives")
-        self.setFixedSize(400, 450)
+        self.setFixedSize(450, 400)
         
         layout = QVBoxLayout()
         layout.setSpacing(15)
