@@ -37,22 +37,6 @@ class AlertDialog:
         box.setWindowFlag(Qt.Dialog)
         box.setWindowFlag(Qt.WindowStaysOnTopHint)
 
-        # Taille large pour un rendu pro
-        box.setStyleSheet("""
-            QMessageBox {
-                font-size: 14px;
-                min-width: 400px;
-                min-height: 200px;
-            }
-            QLabel {
-                font-size: 14px;
-            }
-            QPushButton {
-                min-width: 100px;
-                min-height: 40px;
-                font-weight: bold;
-            }
-        """)
         return box
 
     # ------------------------------
@@ -108,23 +92,6 @@ class AlertDialog:
             box.setDefaultButton(QMessageBox.Yes)
         else:
             box.setDefaultButton(QMessageBox.No)
-
-        # Style uniforme
-        box.setStyleSheet("""
-            QMessageBox {
-                font-size: 14px;
-                min-width: 400px;
-                min-height: 200px;
-            }
-            QLabel {
-                font-size: 14px;
-            }
-            QPushButton {
-                min-width: 100px;
-                min-height: 40px;
-                font-weight: bold;
-            }
-        """)
 
         box.setWindowModality(Qt.ApplicationModal)
         box.setWindowFlag(Qt.Dialog)
