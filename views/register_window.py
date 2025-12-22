@@ -77,7 +77,7 @@ class RegisterWindow(QDialog):
                 background-color: #2ecc71;
                 color: white;
                 border: none;
-                padding: 5px 5px;
+                padding: 10px 20px;
                 border-radius: 5px;
                 font-size: 14px;
             }
@@ -94,7 +94,7 @@ class RegisterWindow(QDialog):
                 background-color: #95a5a6;
                 color: white;
                 border: none;
-                padding: 5px 5px;
+                padding: 10px 20px;
                 border-radius: 5px;
                 font-size: 14px;
             }
