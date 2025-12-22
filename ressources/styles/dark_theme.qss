@@ -44,21 +44,21 @@ QMessageBox {
     font-size: 14px;
     min-width: 600px;
     min-height: 250px;
-    padding: 20px;              /* ✅ Ajoute de l'espace interne autour du contenu */
+    padding: 30px;              /* ✅ Ajoute de l'espace interne autour du contenu */
 }
 
 QMessageBox QLabel {
     font-size: 14px;
-    padding: 10px;              /* ✅ Espacement autour du texte */
+    padding: 15px;              /* ✅ Espacement autour du texte */
     color: @TEXT_COLOR;         /* Utilisation de ta variable de couleur */
 }
 
 QMessageBox QPushButton {
-    min-width: 120px;
-    min-height: 45px;
+    min-width: 100px;
+    min-height: 35px;
     font-weight: bold;
     margin: 10px;               /* ✅ Espacement autour des boutons */
-    padding: 8px 20px;          /* ✅ Espacement interne dans les boutons */
+    padding: 8px 10px;          /* ✅ Espacement interne dans les boutons */
     border-radius: 5px;
     background-color: @PRIMARY;
     color: white;
