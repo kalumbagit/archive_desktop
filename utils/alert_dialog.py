@@ -2,6 +2,7 @@
 from PySide6.QtWidgets import QMessageBox, QWidget
 from PySide6.QtCore import Qt
 
+
 class AlertDialog:
     """
     Classe utilitaire pour afficher des boîtes de dialogue uniformisées.

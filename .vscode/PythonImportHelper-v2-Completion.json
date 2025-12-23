@@ -432,6 +432,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -897,6 +905,15 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "File",
         "importPath": "models.file",
         "description": "models.file",
@@ -967,15 +984,6 @@
         "importPath": "shutil",
         "description": "shutil",
         "detail": "shutil",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
         "documentation": {}
     },
     {
@@ -2302,14 +2310,6 @@
         "documentation": {}
     },
     {
-        "label": "QMessageBox",
-        "importPath": "PySide6.QtWidgets",
-        "description": "PySide6.QtWidgets",
-        "isExtraImport": true,
-        "detail": "PySide6.QtWidgets",
-        "documentation": {}
-    },
-    {
         "label": "QGroupBox",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
@@ -2327,6 +2327,22 @@
     },
     {
         "label": "QSpinBox",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QStackedWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QProgressDialog",
         "importPath": "PySide6.QtWidgets",
         "description": "PySide6.QtWidgets",
         "isExtraImport": true,
@@ -2527,6 +2543,22 @@
     },
     {
         "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QThread",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Signal",
         "importPath": "PySide6.QtCore",
         "description": "PySide6.QtCore",
         "isExtraImport": true,
@@ -2753,6 +2785,14 @@
         "documentation": {}
     },
     {
+        "label": "AlertDialog",
+        "importPath": "utils.alert_dialog",
+        "description": "utils.alert_dialog",
+        "isExtraImport": true,
+        "detail": "utils.alert_dialog",
+        "documentation": {}
+    },
+    {
         "label": "SharingController",
         "importPath": "controllers.sharing_controller",
         "description": "controllers.sharing_controller",
@@ -2792,6 +2832,14 @@
         "importPath": "platform",
         "description": "platform",
         "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "CloudStorageService",
+        "importPath": "controllers.cloud_storage",
+        "description": "controllers.cloud_storage",
+        "isExtraImport": true,
+        "detail": "controllers.cloud_storage",
         "documentation": {}
     },
     {
@@ -2869,6 +2917,15 @@
         "description": "controllers.auth_controller",
         "peekOfCode": "class AuthController:\n    def __init__(self, db: DatabaseManager): \n        self.db = db\n    def register(self, username, email, password):\n        \"\"\"Register a new user\"\"\"\n        session = self.db.get_session()\n        try:\n            # Check if user exists\n            existing = session.query(User).filter(\n                (User.username == username) | (User.email == email)",
         "detail": "controllers.auth_controller",
+        "documentation": {}
+    },
+    {
+        "label": "CloudStorageService",
+        "kind": 6,
+        "importPath": "controllers.cloud_storage",
+        "description": "controllers.cloud_storage",
+        "peekOfCode": "class CloudStorageService:\n    \"\"\"Service de connexion et upload vers le cloud\"\"\"\n    @staticmethod\n    def test_aws_s3_connection(access_key, secret_key, bucket_name, region):\n        \"\"\"Tester la connexion à AWS S3\"\"\"\n        try:\n            import boto3\n            from botocore.exceptions import ClientError\n            s3_client = boto3.client(\n                's3',",
+        "detail": "controllers.cloud_storage",
         "documentation": {}
     },
     {
@@ -3187,11 +3244,20 @@
         "documentation": {}
     },
     {
+        "label": "ConnectionTestThread",
+        "kind": 6,
+        "importPath": "views.settings_window",
+        "description": "views.settings_window",
+        "peekOfCode": "class ConnectionTestThread(QThread):\n    \"\"\"Thread pour tester la connexion sans bloquer l'interface\"\"\"\n    finished = Signal(bool, str)\n    def __init__(self, test_type, *args):\n        super().__init__()\n        self.test_type = test_type\n        self.args = args\n    def run(self):\n        if self.test_type == 'database':\n            success, message = self.test_database_connection(*self.args)",
+        "detail": "views.settings_window",
+        "documentation": {}
+    },
+    {
         "label": "SettingsWindow",
         "kind": 6,
         "importPath": "views.settings_window",
         "description": "views.settings_window",
-        "peekOfCode": "class SettingsWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.settings = Settings()\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Paramètres\")\n        self.setGeometry(200, 200, 600, 500)\n        layout = QVBoxLayout()\n        # Tabs",
+        "peekOfCode": "class SettingsWindow(QDialog):\n    def __init__(self, parent):\n        super().__init__(parent)\n        self.settings = Settings()\n        self.test_thread = None\n        self.init_ui()\n    def init_ui(self):\n        self.setWindowTitle(\"Paramètres\")\n        self.setGeometry(200, 200, 700, 600)\n        layout = QVBoxLayout()",
         "detail": "views.settings_window",
         "documentation": {}
     },

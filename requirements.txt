@@ -1,6 +1,5 @@
 # requirements.txt
 
-```txt
 # Interface graphique
 PySide6>=6.6.0
 
@@ -24,3 +23,15 @@ python-magic-bin>=0.4.14; platform_system == "Windows"
 # Base de données (optionnel - si vous utilisez PostgreSQL ou MySQL)
 psycopg2-binary>=2.9.9  # Pour PostgreSQL
 PyMySQL>=1.1.0  # Pour MySQL
+
+# Pour AWS S3
+boto3
+
+# Pour Azure
+azure-storage-blob
+
+# Pour Google Cloud
+google-cloud-storage
+
+# lib pour la dependance de creation d'executable
+pyinstaller
