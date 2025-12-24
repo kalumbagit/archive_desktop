@@ -717,6 +717,15 @@
         "documentation": {}
     },
     {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
         "label": "Folder",
         "importPath": "models.folder",
         "description": "models.folder",
@@ -2951,7 +2960,7 @@
         "kind": 6,
         "importPath": "controllers.file_controller",
         "description": "controllers.file_controller",
-        "peekOfCode": "class FileController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n        self.audit = AuditController(user, db)\n        self.settings = Settings()\n    def add_file(self, source_path, folder_id):\n        \"\"\"Add file to archive\"\"\"\n        session = self.db.get_session()\n        try:",
+        "peekOfCode": "class FileController:\n    def __init__(self, user, db: DatabaseManager):\n        self.user = user\n        self.db = db\n        self.audit = AuditController(user, db)\n        self.settings = Settings()\n    def _upload_to_cloud(self, file_path, file_name, folder_id):\n        \"\"\"\n        Upload un fichier vers le cloud en arrière-plan\n        Cette méthode s'exécute dans un thread séparé",
         "detail": "controllers.file_controller",
         "documentation": {}
     },
