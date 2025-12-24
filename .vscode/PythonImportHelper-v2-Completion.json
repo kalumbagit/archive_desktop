@@ -297,6 +297,15 @@
         "documentation": {}
     },
     {
+        "label": "copy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "copy",
+        "description": "copy",
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
         "label": "DatabaseManager",
         "importPath": "database.db_manager",
         "description": "database.db_manager",
@@ -2906,7 +2915,7 @@
         "kind": 6,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "class Settings:\n    _instance = None\n    _config_file = Path.home() / '.archive_manager' / 'config.json'\n    DEFAULT_SETTINGS = {\n        'database': {\n            'type': 'sqlite',\n            'path': str(Path.home() / '.archive_manager' / 'archives.db')\n        },\n        'storage': {\n            'base_path': str(Path.home() / 'Archives')",
+        "peekOfCode": "class Settings:\n    \"\"\"\n    Gestionnaire de configuration de l'application\n    Utilise le pattern Singleton pour assurer une instance unique\n    \"\"\"\n    _instance = None\n    _config_file = Path.home() / '.archive_manager' / 'config.json'\n    DEFAULT_SETTINGS = {\n        'database': {\n            'type': 'sqlite',",
         "detail": "config.settings",
         "documentation": {}
     },
