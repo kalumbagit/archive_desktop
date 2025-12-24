@@ -3,6 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 from sqlalchemy.pool import StaticPool
 from pathlib import Path
+from utils.path_config import load_resource
 
 Base = declarative_base()
 
@@ -29,7 +30,12 @@ class DatabaseManager:
         """
         if db_type == 'sqlite':
             if db_path is None:
-                db_path = Path.home() / '.archive_manager' / 'archives.db'
+                # ⚠️ Ici on utilise load_resource pour retrouver le chemin
+                try:
+                    db_path = load_resource("ressources/database/archives.db", mode="text")
+                except FileNotFoundError:
+                    # fallback si le fichier n’est pas packagé
+                    db_path = Path.home() / '.archive_manager' / 'archives.db'
             else:
                 # Toujours convertir en Path pour éviter l'erreur .parent
                 db_path = Path(db_path)

@@ -1,10 +1,7 @@
 # database/migrations.py
 from sqlalchemy import inspect
 from database.db_manager import DatabaseManager, Base
-from models.user import User
-from models.folder import Folder
-from models.file import File
-from models.audit_log import AuditLog
+
 
 class DatabaseMigration:
     """Handle database migrations and schema updates"""

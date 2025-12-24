@@ -1,10 +1,742 @@
 [
     {
-        "label": "create_engine",
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
+        "label": "StaticPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
         "isExtraImport": true,
-        "detail": "sqlalchemy",
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
+        "label": "NullPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
+        "label": "StaticPool",
+        "importPath": "sqlalchemy.pool",
+        "description": "sqlalchemy.pool",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.pool",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "load_resource",
+        "importPath": "utils.path_config",
+        "description": "utils.path_config",
+        "isExtraImport": true,
+        "detail": "utils.path_config",
+        "documentation": {}
+    },
+    {
+        "label": "load_resource",
+        "importPath": "utils.path_config",
+        "description": "utils.path_config",
+        "isExtraImport": true,
+        "detail": "utils.path_config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "isExtraImport": true,
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "DatabaseManager",
+        "importPath": "database.db_manager",
+        "description": "database.db_manager",
+        "isExtraImport": true,
+        "detail": "database.db_manager",
+        "documentation": {}
+    },
+    {
+        "label": "AuditLog",
+        "importPath": "models.audit_log",
+        "description": "models.audit_log",
+        "isExtraImport": true,
+        "detail": "models.audit_log",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models.user",
+        "description": "models.user",
+        "isExtraImport": true,
+        "detail": "models.user",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "AuditController",
+        "importPath": "controllers.audit_controller",
+        "description": "controllers.audit_controller",
+        "isExtraImport": true,
+        "detail": "controllers.audit_controller",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "models.file",
+        "description": "models.file",
+        "isExtraImport": true,
+        "detail": "models.file",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "models.file",
+        "description": "models.file",
+        "isExtraImport": true,
+        "detail": "models.file",
+        "documentation": {}
+    },
+    {
+        "label": "File",
+        "importPath": "models.file",
+        "description": "models.file",
+        "isExtraImport": true,
+        "detail": "models.file",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "magic",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "magic",
+        "description": "magic",
+        "detail": "magic",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "Folder",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
+        "documentation": {}
+    },
+    {
+        "label": "FolderVisibility",
+        "importPath": "models.folder",
+        "description": "models.folder",
+        "isExtraImport": true,
+        "detail": "models.folder",
         "documentation": {}
     },
     {
@@ -301,738 +1033,6 @@
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
-        "documentation": {}
-    },
-    {
-        "label": "StaticPool",
-        "importPath": "sqlalchemy.pool",
-        "description": "sqlalchemy.pool",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.pool",
-        "documentation": {}
-    },
-    {
-        "label": "NullPool",
-        "importPath": "sqlalchemy.pool",
-        "description": "sqlalchemy.pool",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.pool",
-        "documentation": {}
-    },
-    {
-        "label": "StaticPool",
-        "importPath": "sqlalchemy.pool",
-        "description": "sqlalchemy.pool",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.pool",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Callable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "Base",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "DatabaseManager",
-        "importPath": "database.db_manager",
-        "description": "database.db_manager",
-        "isExtraImport": true,
-        "detail": "database.db_manager",
-        "documentation": {}
-    },
-    {
-        "label": "AuditLog",
-        "importPath": "models.audit_log",
-        "description": "models.audit_log",
-        "isExtraImport": true,
-        "detail": "models.audit_log",
-        "documentation": {}
-    },
-    {
-        "label": "AuditLog",
-        "importPath": "models.audit_log",
-        "description": "models.audit_log",
-        "isExtraImport": true,
-        "detail": "models.audit_log",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "models.user",
-        "description": "models.user",
-        "isExtraImport": true,
-        "detail": "models.user",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "models.user",
-        "description": "models.user",
-        "isExtraImport": true,
-        "detail": "models.user",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "models.user",
-        "description": "models.user",
-        "isExtraImport": true,
-        "detail": "models.user",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "models.user",
-        "description": "models.user",
-        "isExtraImport": true,
-        "detail": "models.user",
-        "documentation": {}
-    },
-    {
-        "label": "AuditController",
-        "importPath": "controllers.audit_controller",
-        "description": "controllers.audit_controller",
-        "isExtraImport": true,
-        "detail": "controllers.audit_controller",
-        "documentation": {}
-    },
-    {
-        "label": "AuditController",
-        "importPath": "controllers.audit_controller",
-        "description": "controllers.audit_controller",
-        "isExtraImport": true,
-        "detail": "controllers.audit_controller",
-        "documentation": {}
-    },
-    {
-        "label": "AuditController",
-        "importPath": "controllers.audit_controller",
-        "description": "controllers.audit_controller",
-        "isExtraImport": true,
-        "detail": "controllers.audit_controller",
-        "documentation": {}
-    },
-    {
-        "label": "AuditController",
-        "importPath": "controllers.audit_controller",
-        "description": "controllers.audit_controller",
-        "isExtraImport": true,
-        "detail": "controllers.audit_controller",
-        "documentation": {}
-    },
-    {
-        "label": "AuditController",
-        "importPath": "controllers.audit_controller",
-        "description": "controllers.audit_controller",
-        "isExtraImport": true,
-        "detail": "controllers.audit_controller",
-        "documentation": {}
-    },
-    {
-        "label": "AuditController",
-        "importPath": "controllers.audit_controller",
-        "description": "controllers.audit_controller",
-        "isExtraImport": true,
-        "detail": "controllers.audit_controller",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timezone",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "models.file",
-        "description": "models.file",
-        "isExtraImport": true,
-        "detail": "models.file",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "models.file",
-        "description": "models.file",
-        "isExtraImport": true,
-        "detail": "models.file",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "models.file",
-        "description": "models.file",
-        "isExtraImport": true,
-        "detail": "models.file",
-        "documentation": {}
-    },
-    {
-        "label": "File",
-        "importPath": "models.file",
-        "description": "models.file",
-        "isExtraImport": true,
-        "detail": "models.file",
-        "documentation": {}
-    },
-    {
-        "label": "Settings",
-        "importPath": "config.settings",
-        "description": "config.settings",
-        "isExtraImport": true,
-        "detail": "config.settings",
-        "documentation": {}
-    },
-    {
-        "label": "Settings",
-        "importPath": "config.settings",
-        "description": "config.settings",
-        "isExtraImport": true,
-        "detail": "config.settings",
-        "documentation": {}
-    },
-    {
-        "label": "Settings",
-        "importPath": "config.settings",
-        "description": "config.settings",
-        "isExtraImport": true,
-        "detail": "config.settings",
-        "documentation": {}
-    },
-    {
-        "label": "Settings",
-        "importPath": "config.settings",
-        "description": "config.settings",
-        "isExtraImport": true,
-        "detail": "config.settings",
-        "documentation": {}
-    },
-    {
-        "label": "shutil",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "shutil",
-        "description": "shutil",
-        "detail": "shutil",
-        "documentation": {}
-    },
-    {
-        "label": "magic",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "magic",
-        "description": "magic",
-        "detail": "magic",
-        "documentation": {}
-    },
-    {
-        "label": "Folder",
-        "importPath": "models.folder",
-        "description": "models.folder",
-        "isExtraImport": true,
-        "detail": "models.folder",
-        "documentation": {}
-    },
-    {
-        "label": "Folder",
-        "importPath": "models.folder",
-        "description": "models.folder",
-        "isExtraImport": true,
-        "detail": "models.folder",
-        "documentation": {}
-    },
-    {
-        "label": "Folder",
-        "importPath": "models.folder",
-        "description": "models.folder",
-        "isExtraImport": true,
-        "detail": "models.folder",
-        "documentation": {}
-    },
-    {
-        "label": "FolderVisibility",
-        "importPath": "models.folder",
-        "description": "models.folder",
-        "isExtraImport": true,
-        "detail": "models.folder",
-        "documentation": {}
-    },
-    {
-        "label": "Folder",
-        "importPath": "models.folder",
-        "description": "models.folder",
-        "isExtraImport": true,
-        "detail": "models.folder",
         "documentation": {}
     },
     {
@@ -2843,6 +2843,15 @@
         "documentation": {}
     },
     {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
         "label": "LoginWindow",
         "importPath": "views.login_window",
         "description": "views.login_window",
@@ -2888,7 +2897,7 @@
         "kind": 6,
         "importPath": "config.database",
         "description": "config.database",
-        "peekOfCode": "class DatabaseConfig:\n    \"\"\"Database configuration helper\"\"\"\n    @staticmethod\n    def get_sqlite_config(db_path=None):\n        \"\"\"Get SQLite database configuration\"\"\"\n        if db_path is None:\n            db_path = Path.home() / '.archive_manager' / 'archives.db'\n        db_path.parent.mkdir(parents=True, exist_ok=True)\n        return {\n            'url': f'sqlite:///{db_path}',",
+        "peekOfCode": "class DatabaseConfig:\n    \"\"\"Database configuration helper\"\"\"\n    @staticmethod\n    def get_sqlite_config(db_path=None):\n        \"\"\"Get SQLite database configuration\"\"\"\n        settings = Settings()\n        # Lire le chemin depuis la config si non fourni\n        if db_path is None:\n            db_path = settings.get(\"database.path\")\n        # Si packagé avec PyInstaller, essayer de charger via load_resource",
         "detail": "config.database",
         "documentation": {}
     },
@@ -3100,6 +3109,15 @@
         "documentation": {}
     },
     {
+        "label": "load_resource",
+        "kind": 2,
+        "importPath": "utils.path_config",
+        "description": "utils.path_config",
+        "peekOfCode": "def load_resource(relative_path: str, mode: str = \"text\", encoding: str = \"utf-8\"):\n    \"\"\"\n    Charger un fichier de ressource (QSS, JSON, config, etc.)\n    Fonctionne en mode développement et avec PyInstaller (sys._MEIPASS).\n    :param relative_path: chemin relatif du fichier (ex: \"ressources/styles/dark_theme.qss\")\n    :param mode: \"text\" (par défaut) ou \"binary\"\n    :param encoding: encodage utilisé si mode=\"text\"\n    :return: contenu du fichier (str ou bytes)\n    \"\"\"\n    # Déterminer la base selon si on est en exécutable ou en dev",
+        "detail": "utils.path_config",
+        "documentation": {}
+    },
+    {
         "label": "PreviewGenerator",
         "kind": 6,
         "importPath": "utils.preview_generator",
@@ -3268,6 +3286,24 @@
         "description": "views.share_dialog",
         "peekOfCode": "class ShareDialog(QDialog):\n    \"\"\"Dialogue pour partager un dossier avec un utilisateur\"\"\"\n    def __init__(self, folder, current_user, db, parent=None):\n        super().__init__(parent)\n        self.folder = folder\n        self.current_user = current_user\n        self.db = db\n        self.sharing_controller = SharingController(current_user, db)\n        self.init_ui()\n        self.load_users()",
         "detail": "views.share_dialog",
+        "documentation": {}
+    },
+    {
+        "label": "BuildManager",
+        "kind": 6,
+        "importPath": "build",
+        "description": "build",
+        "peekOfCode": "class BuildManager:\n    \"\"\"Gestionnaire de build multi-plateforme\"\"\"\n    def __init__(self):\n        self.platform = platform.system().lower()\n        self.project_root = Path(__file__).parent\n        self.dist_dir = self.project_root / 'dist'\n        self.build_dir = self.project_root / 'build'\n    def clean(self):\n        \"\"\"Nettoyer les dossiers de build\"\"\"\n        print(\"🧹 Nettoyage des dossiers de build...\")",
+        "detail": "build",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "build",
+        "description": "build",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser(description='Build Archive Manager')\n    parser.add_argument('--clean', action='store_true', help='Nettoyer avant le build')\n    parser.add_argument('--onefile', action='store_true', help='Build en un seul fichier')\n    parser.add_argument('--windowed', action='store_true', default=True, help='Build sans console')\n    parser.add_argument('--spec', action='store_true', help='Utiliser le fichier .spec')\n    parser.add_argument('--simple', action='store_true', help='Build simple sans .spec')\n    args = parser.parse_args()\n    builder = BuildManager()\n    print(\"=\" * 60)",
+        "detail": "build",
         "documentation": {}
     },
     {
