@@ -1,7 +1,7 @@
 # resources/styles/colors.py
 
 LIGHT_COLORS = {
-    'MAIN_BG': '#3ec3f3ff',
+    'MAIN_BG': "#83d6f4ff",
     'TEXT_COLOR': '#2c3e50',
     'MENU_BG': '#ecf0f1',
     'MENU_BORDER': '#bdc3c7',

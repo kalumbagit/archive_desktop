@@ -3068,7 +3068,7 @@
         "kind": 5,
         "importPath": "ressources.styles.colors",
         "description": "ressources.styles.colors",
-        "peekOfCode": "LIGHT_COLORS = {\n    'MAIN_BG': '#3ec3f3ff',\n    'TEXT_COLOR': '#2c3e50',\n    'MENU_BG': '#ecf0f1',\n    'MENU_BORDER': '#bdc3c7',\n    'PRIMARY_HOVER': '#2980b9',\n    'PRIMARY_PRESSED': '#21618c',\n    'PRIMARY': '#3498db',\n    'DISABLED_BG': '#95a5a6',\n    'DISABLED_TEXT': '#ecf0f1',",
+        "peekOfCode": "LIGHT_COLORS = {\n    'MAIN_BG': \"#83d6f4ff\",\n    'TEXT_COLOR': '#2c3e50',\n    'MENU_BG': '#ecf0f1',\n    'MENU_BORDER': '#bdc3c7',\n    'PRIMARY_HOVER': '#2980b9',\n    'PRIMARY_PRESSED': '#21618c',\n    'PRIMARY': '#3498db',\n    'DISABLED_BG': '#95a5a6',\n    'DISABLED_TEXT': '#ecf0f1',",
         "detail": "ressources.styles.colors",
         "documentation": {}
     },
